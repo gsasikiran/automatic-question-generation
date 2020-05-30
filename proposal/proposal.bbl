@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{zhou2017neural}
+Qingyu Zhou, Nan Yang, Furu Wei, Chuanqi Tan, Hangbo Bao, and Ming Zhou.
+\newblock Neural question generation from text: A preliminary study.
+\newblock In {\em National CCF Conference on Natural Language Processing and
+  Chinese Computing}, pages 662--671. Springer, 2017.
+
+\bibitem{fleiss1971measuring}
+Joseph~L Fleiss.
+\newblock Measuring nominal scale agreement among many raters.
+\newblock {\em Psychological bulletin}, 76(5):378, 1971.
+
+\end{thebibliography}

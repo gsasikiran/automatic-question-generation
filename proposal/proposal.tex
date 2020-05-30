@@ -1,0 +1,35 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{titling}
+\usepackage[nottoc]{tocbibind}
+%opening
+\title{\vspace{-2cm}Automatic Question Generation}
+\author{Sasi Kiran Gaddipati, Desiana Dien Nurchalifah}
+
+\begin{document}
+\maketitle
+\section{Topic}
+	The evaluator takes considerable time to prepare questions and evaluate answers, when examining to assess students. We aim to automatically generate questions through its associated answers \cite{zhou2017neural}. The application is also considered secure, compared to the manual evaluator making questions, which may lead to exposure to an unauthorized party. We would like to train on the SQuAD dataset, the answer as input and the corresponding question as output.
+
+\section{Techniques in NLP}
+The techniques that we consider using are as follows:
+\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\item Tokenization: To tokenize the words in questions and answers
+	\item Named Entity Recognition: To extract the words information from sentences
+	\item Seq2Seq Learning: To train the input and output words
+	\item Positional Encoding: To encode the position of the answer
+	
+	% \item Keyword Extraction : extraction of keywords within questions generated
+	%\item Automatic Text Summarization: \cite{flor2018semantic} stated in his paper that previous works have done automatic summarization of text to get the important text for creating questions.
+\end{itemize}
+
+\section{Evaluation Strategy}
+	According to the work of \cite{zhou2017neural}, evaluation is done manually. We assign score considering the semantics, context and grammar of the generated question. To check the agreement between evaluators, Fleiss' Kappa score \cite{fleiss1971measuring} is calculated.
+
+\bibliography{proposal}
+\bibliographystyle{unsrt}
+
+\end{document}
