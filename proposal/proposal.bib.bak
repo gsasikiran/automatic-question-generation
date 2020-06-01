@@ -1,0 +1,15 @@
+% Encoding: UTF-8
+
+@InProceedings{banerjee-lavie-2005-meteor,
+  author    = {Banerjee, Satanjeev and Lavie, Alon},
+  title     = {{METEOR}: An Automatic Metric for {MT} Evaluation with Improved Correlation with Human Judgments},
+  booktitle = {Proceedings of the {ACL} Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization},
+  year      = {2005},
+  pages     = {65--72},
+  address   = {Ann Arbor, Michigan},
+  month     = jun,
+  publisher = {Association for Computational Linguistics},
+  url       = {https://www.aclweb.org/anthology/W05-0909},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

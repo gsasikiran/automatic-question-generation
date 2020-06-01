@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: proposal.aux
 The style file: unsrt.bst
 Database file #1: proposal.bib
-You've used 2 entries,
+You've used 3 entries,
             1791 wiz_defined-function locations,
-            460 strings with 3922 characters,
-and the built_in function-call counts, 617 in all, are:
-= -- 56
-> -- 24
+            466 strings with 4161 characters,
+and the built_in function-call counts, 787 in all, are:
+= -- 71
+> -- 32
 < -- 1
-+ -- 9
-- -- 7
-* -- 41
-:= -- 96
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 2
++ -- 12
+- -- 9
+* -- 56
+:= -- 128
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 30
-empty$ -- 59
-format.name$ -- 7
-if$ -- 142
+cite$ -- 3
+duplicate$ -- 36
+empty$ -- 74
+format.name$ -- 9
+if$ -- 176
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 2
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 3
 pop$ -- 7
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 19
 stack$ -- 0
-substring$ -- 41
-swap$ -- 12
+substring$ -- 51
+swap$ -- 10
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 6
-width$ -- 3
-write$ -- 25
+while$ -- 7
+width$ -- 4
+write$ -- 37

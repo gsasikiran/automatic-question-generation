@@ -1,11 +1,11 @@
 \documentclass[a4paper, 11pt]{article}
-
+\usepackage[text={16cm,24cm}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{titling}
 \usepackage[nottoc]{tocbibind}
 %opening
-\title{\vspace{-2cm}Automatic Question Generation}
+\title{\vspace{-1cm}Automatic Question Generation}
 \author{Sasi Kiran Gaddipati, Desiana Dien Nurchalifah}
 
 \begin{document}
@@ -27,8 +27,11 @@ The techniques that we consider using are as follows:
 \end{itemize}
 
 \section{Evaluation Strategy}
-	According to the work of \cite{zhou2017neural}, evaluation is done manually. We assign score considering the semantics, context and grammar of the generated question. To check the agreement between evaluators, Fleiss' Kappa score \cite{fleiss1971measuring} is calculated.
-
+	According to the work of \cite{zhou2017neural}, evaluation is done in two methods:
+	\begin{itemize}
+		\item Human evaluation: Judges measure quality of generated questions according to evaluation criteria, semantics, context and grammar. To check the agreement among judges, Fleiss' Kappa score \cite{fleiss1971measuring} is calculated.
+		\item Automatic evaluation: BLEU-4 scores are used to evaluate rare words problem. In addition of BLEU, METEOR\cite{banerjee-lavie-2005-meteor} is proposed to compare top rated questions performance.
+	\end{itemize}
 \bibliography{proposal}
 \bibliographystyle{unsrt}
 
