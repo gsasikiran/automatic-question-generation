@@ -2,13 +2,21 @@
 
 \bibitem{zhou2017neural}
 Qingyu Zhou, Nan Yang, Furu Wei, Chuanqi Tan, Hangbo Bao, and Ming Zhou.
-\newblock Neural question generation from text: A preliminary study.
-\newblock In {\em National CCF Conference on Natural Language Processing and
-  Chinese Computing}, pages 662--671. Springer, 2017.
+\newblock Neural question generation from text: {A} preliminary study.
+\newblock {\em CoRR}, abs/1704.01792, 2017.
 
 \bibitem{fleiss1971measuring}
-Joseph~L Fleiss.
+JL~Fleiss.
 \newblock Measuring nominal scale agreement among many raters.
-\newblock {\em Psychological bulletin}, 76(5):378, 1971.
+\newblock {\em Psychological bulletin}, 76(5):378—382, November 1971.
+
+\bibitem{banerjee-lavie-2005-meteor}
+Satanjeev Banerjee and Alon Lavie.
+\newblock {METEOR}: An automatic metric for {MT} evaluation with improved
+  correlation with human judgments.
+\newblock In {\em Proceedings of the {ACL} Workshop on Intrinsic and Extrinsic
+  Evaluation Measures for Machine Translation and/or Summarization}, pages
+  65--72, Ann Arbor, Michigan, June 2005. Association for Computational
+  Linguistics.
 
 \end{thebibliography}
