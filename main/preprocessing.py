@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import spacy
 
-def preprocess(file_name):
+def preprocess_file(file_name):
     '''
     preprocess SQuAD dataset and return list of examples,
     which contain list of one example containing tokenized context and questions,
@@ -24,7 +24,8 @@ def preprocess(file_name):
 	        article = json_data[i]
 	        for par in article['paragraphs']:
 	            context = par['context'].replace("``",'" ')
-	            context_tokens = [token.text for token in nlp(context)]
+	            # Tokenize context
+	            # context_tokens = [token.text for token in nlp(context)]
 	            for qa in par['qas']:
 	                idq += 1
 	                question = qa['question'].replace("``",'" ')
@@ -34,11 +35,12 @@ def preprocess(file_name):
 	                    answer = ans['text']
 	                    answer_text.append(answer)
 	                example = {"id": idq,
-	                           "context_tokens": context_tokens,
+	                           # "context_tokens": context_tokens,
+	                           "context": context,
 	                           "question_tokens": question_tokens,
 	                           "original_answer": answer_text,
 	                           "is_impossible": qa['is_impossible']}
 	                examples.apppend(example)
 	return examples
 
-preprocess('../dataset/train-v2.0.json')
+preprocess_file('../dataset/train-v2.0.json')
