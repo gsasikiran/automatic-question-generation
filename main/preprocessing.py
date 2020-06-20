@@ -4,6 +4,7 @@ import spacy
 import numpy as np
 import pandas as pd
 import pickle
+import re
 
 nlp = spacy.load('en_core_web_sm')
 
@@ -44,11 +45,6 @@ def preprocess(data, remove_stopwords=True, replace_entities=False):
 
         # Clean text from stopwords, phonetics, foreign chars and punctuations
         text = nlp(text)
-        # Removal phonetics
-        text = re.sub('\/.*\ˈ.*\/', '', text)
-        # Removal japanese characters
-        # removal of japanese characters
-        text = re.sub('[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]+', '', text)
         if remove_stopwords:
             text = [str(token.orth_) for token in text 
                     if not token.is_stop and not token.is_punct]
@@ -56,7 +52,13 @@ def preprocess(data, remove_stopwords=True, replace_entities=False):
         else:
             text = [str(token.orth_) for token in text if not token.is_punct]
             text = ' '.join(text)
-    
+        
+        # Removal phonetics
+        text = re.sub('\/.*\ˈ.*\/', '', text)
+        # Removal japanese characters
+        # removal of japanese characters
+        text = re.sub('[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]+', '', text)
+
         preprocessed_data.append(text)
 
         #Sanity check
@@ -156,7 +158,7 @@ def create_embed_matrix(vocab2int, embed_idx, embed_dim=300):
     
     return word_embed_matrix
 
-def data_to_int(data, vocab2int, word_count, unk_count, eos=True):
+def data_to_ints(data, vocab2int, word_count, unk_count, eos=True):
     '''
     Convert words in text/data to its respective integer values
     Arguments:
@@ -190,7 +192,7 @@ def data_to_int(data, vocab2int, word_count, unk_count, eos=True):
     assert len(int_data) == len(data)
     return int_data, word_count, unk_count
 
-def unkown_counter(data, vocab2int):
+def unknown_counter(data, vocab2int):
     '''
     Count UNK token in data
     '''
@@ -217,8 +219,8 @@ def filter_data_length(converted_inputs, converted_targets, vocab2int,
         for idx, words in enumerate(converted_targets):
             if (len(converted_targets[idx]) >= min_target_length and
                 len(converted_targets[idx]) <= max_target_length and
-                unkown_counter(converted_targets[idx], vocab2int) <= unk_target_limit and
-                unkown_counter(converted_inputs[idx], vocab2int) <= unk_input_limit and
+                unknown_counter(converted_targets[idx], vocab2int) <= unk_target_limit and
+                unknown_counter(converted_inputs[idx], vocab2int) <= unk_input_limit and
                 length == len(converted_inputs[idx])
                 ):
                 sorted_targets.append(converted_targets[idx])
@@ -250,11 +252,11 @@ def filter_data_length(converted_inputs, converted_targets, vocab2int,
 #     Returns:
 #         context_ner -- list of entities with labels
 #     '''
-# 	nlp = spacy.load('en_core_web_sm')
-# 	entities = nlp(context)
-# 	labels = labels = [x.label_ for x in entities.ents]
+#   nlp = spacy.load('en_core_web_sm')
+#   entities = nlp(context)
+#   labels = labels = [x.label_ for x in entities.ents]
 
-# 	return set(zip(entities.ents,labels))
+#   return set(zip(entities.ents,labels))
 
 def save_pickle(data, file_name):
     '''

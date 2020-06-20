@@ -46,8 +46,8 @@ json.dump(parsed_dev, open('../dataset/parsed_dev.json', 'w'))
 train_set =  json.load(open('../dataset/parsed_train.json','r'))
 dev_set =  json.load(open('../dataset/parsed_dev.json','r'))
 
-train_pairs = [[section['paragraph'],section['answers'],section['question']] for section in train_set]
-dev_pairs = [[section['paragraph'],section['answers'],section['question']] for section in dev_set]
+train_pairs = [[section['context'],section['answers'],section['question']] for section in train_set]
+dev_pairs = [[section['context'],section['answers'],section['question']] for section in dev_set]
 
 # Saving pairs to csv format
 df_train = pd.DataFrame(train_pairs)
