@@ -352,13 +352,25 @@ tokenized_context = converted_inputs
 tokenized_questions = converted_targets
 tokenized_answers = converted_inputs_ans
 
+# Generate with integers
 pairs = []
 
 for context, answer, question in zip(tokenized_context, tokenized_answers, tokenized_questions):
     context.extend(answer)
     pairs.append([context, question])
 
-save_pickle(pairs, 'input_output_pairs')
+save_pickle(pairs, 'input_output_pairs_int')
+
+# Generate pairs with string
+pairs_str = []
+
+for value in pairs:
+    pairs_str.append([[int2vocab[val_in] for val_in in value[0]],[int2vocab[val_out] for val_out in value[1]]])
+save_pickle(pairs_str, 'input_output_pairs')
+
+# Saving list of vocabulary only
+vocab_list = [str(value) for value in vocab2int]
+save_pickle(vocab_list, 'vocab_list')
 
 # Sort inputs and targets to be within the range length
 # =========================== Not yet finished ======================
