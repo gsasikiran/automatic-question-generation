@@ -44,21 +44,31 @@ def preprocess(data, remove_stopwords=True, replace_entities=False):
             text = text.lower()
 
         # Clean text from stopwords, phonetics, foreign chars and punctuations
+        # Addition of EOS tag
         text = nlp(text)
+        text_ = ""
         if remove_stopwords:
-            text = [str(token.orth_) for token in text 
+            for sent in text.sents:
+                sent = [str(token.orth_) for token in sent 
                     if not token.is_stop and not token.is_punct]
-            text = ' '.join(text)
+                sent.append('EOS')
+                sent = ' '.join(sent)
+                text_ += sent + ' '
         else:
-            text = [str(token.orth_) for token in text if not token.is_punct]
-            text = ' '.join(text)
+            for sent in text.sents:
+                sent = [str(token.orth_) for token in sent if not token.is_punct]
+                sent.append('EOS')
+                sent = ' '.join(sent)
+                text_ += sent + ' '
+        text = text_
         
         # Removal phonetics
         text = re.sub('\/.*\ˈ.*\/', '', text)
         # Removal japanese characters
-        # removal of japanese characters
         text = re.sub('[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]+', '', text)
 
+        # Add SOS tag in the beginning
+        text = 'SOS ' + text
         preprocessed_data.append(text)
 
         #Sanity check
@@ -68,6 +78,11 @@ def preprocess(data, remove_stopwords=True, replace_entities=False):
                 print(text)
             except:
                 pass
+
+        #Save current preprocessed data
+        if idx % 4000 == 0 and idx > 0:
+            print('Saving current data...')
+            save_pickle(preprocessed_data,'preprocessed_data')
 
     return preprocessed_data
 
@@ -109,15 +124,13 @@ def create_conversion_dictionaries(word_freq, embed_idx, threshold=10):
 
     # Dictionary to convert vocab to integer
     vocab2int = {}
-    value = 2
+    value = 0
     for token, freq in word_freq.items():
         if freq >= threshold or token in embed_idx:
             vocab2int[token] = value
             value += 1
 
     # Tokens to guide Seq2Seq / Attention RNN model
-    vocab2int['SOS'] = 0
-    vocab2int['EOS'] = 1
     vocab2int['UNK'] = len(vocab2int)
 
     # Create reverse conversion dictionary
@@ -158,7 +171,7 @@ def create_embed_matrix(vocab2int, embed_idx, embed_dim=300):
     
     return word_embed_matrix
 
-def data_to_ints(data, vocab2int, word_count, unk_count, eos=True):
+def data_to_ints(data, vocab2int, word_count, unk_count):
     '''
     Convert words in text/data to its respective integer values
     Arguments:
@@ -173,18 +186,20 @@ def data_to_ints(data, vocab2int, word_count, unk_count, eos=True):
     int_data = []
     for text in data:
         int_text = []
-        for token in text.split():
-            word_count += 1
-            if token in vocab2int:
-                # Convert token to integer
-                int_text.append(vocab2int[token])
-            else:
-                # Unknown token
-                int_text.append(vocab2int['UNK'])
-                unk_count += 1
-        if eos:
-            # Append EOS at the end of sentence
-            int_text.append(vocab2int['EOS'])
+        try:
+            # Ensure input consists of tokens
+            for token in text.split():
+                word_count += 1
+                if token in vocab2int:
+                    # Convert token to integer
+                    int_text.append(vocab2int[token])
+                else:
+                    # Unknown token
+                    int_text.append(vocab2int['UNK'])
+                    unk_count += 1
+        except:
+            # Empty input
+            pass
 
         int_data.append(int_text)
 
@@ -286,13 +301,13 @@ def tensors_from_pairs(pairs):
 
 # Load pairs and preprocess
 df_train = pd.read_csv(r'../dataset/train_pairs.csv')
-preprocessed_inputs = preprocess(df_train['Paragraph'].tolist(), remove_stopwords=True, replace_entities=True)
+preprocessed_inputs = preprocess(df_train['Paragraph'].tolist(), remove_stopwords=False, replace_entities=False)
 save_pickle(preprocessed_inputs, 'preprocessed_inputs')
 
-preprocessed_inputs_ans = preprocess(df_train['Answers'].tolist(), remove_stopwords=True, replace_entities=True)
+preprocessed_inputs_ans = preprocess(df_train['Answers'].tolist(), remove_stopwords=False, replace_entities=False)
 save_pickle(preprocessed_inputs_ans, 'preprocessed_inputs_ans')
 
-preprocessed_targets = preprocess(df_train['Question'].tolist(), remove_stopwords=False, replace_entities=True)
+preprocessed_targets = preprocess(df_train['Question'].tolist(), remove_stopwords=False, replace_entities=False)
 save_pickle(preprocessed_targets, 'preprocessed_targets')
 
 # Load Numberbatch word embeddings
@@ -304,6 +319,7 @@ load_embeddings(embed_idx, file_path)
 word_freq = {}
 count_freq_words(word_freq, preprocessed_targets)
 count_freq_words(word_freq, preprocessed_inputs)
+count_freq_words(word_freq, preprocessed_inputs_ans)
 
 # Generate dictionary for conversion of usable vocabulary to integer
 vocab2int, int2vocab = create_conversion_dictionaries(word_freq, embed_idx)
@@ -321,6 +337,7 @@ unk_count = 0
 
 converted_inputs, word_count, unk_count = data_to_ints(preprocessed_inputs, vocab2int, word_count, unk_count)
 converted_targets, word_count, unk_count = data_to_ints(preprocessed_targets, vocab2int, word_count, unk_count)
+converted_inputs_ans, word_count, unk_count = data_to_ints(preprocessed_inputs_ans, vocab2int, word_count, unk_count)
 
 # Ensure both input and target converted are on the same length
 assert len(converted_inputs) == len(converted_targets)
@@ -328,6 +345,20 @@ assert len(converted_inputs) == len(converted_targets)
 # Save to pickle format
 save_pickle(converted_inputs, 'converted_inputs')
 save_pickle(converted_targets, 'converted_targets')
+save_pickle(converted_inputs_ans, 'converted_inputs_ans')
+
+# Generate pairs for model input
+tokenized_context = converted_inputs
+tokenized_questions = converted_targets
+tokenized_answers = converted_inputs_ans
+
+pairs = []
+
+for context, answer, question in zip(tokenized_context, tokenized_answers, tokenized_questions):
+    context.extend(answer)
+    pairs.append([context, question])
+
+save_pickle(pairs, 'input_output_pairs')
 
 # Sort inputs and targets to be within the range length
 # =========================== Not yet finished ======================
