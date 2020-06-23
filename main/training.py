@@ -11,9 +11,8 @@ from torch import optim
 plt.switch_backend('agg')
 import matplotlib.ticker as ticker
 
-from models import EncoderRNN
-from models import DecoderRNN, AttnDecoderRNN
-from preprocessing import tensors_from_pairs
+
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -31,7 +30,7 @@ class TrainArch:
 
         self.max_length = max_length
         self.SOS_token = 0
-        self.EOS_token = 1
+        self.EOS_token = 7 # The EOS int in our vocab is 7
         self.teacher_forcing_ratio = teacher_forcing_ratio
 
     def seq2seq(self, input_tensor, target_tensor, decoder):
@@ -207,15 +206,21 @@ class TrainIters:
         ax.yaxis.set_major_locator(loc)
         plt.plot(points)
 
-    def train(self, pairs, vocab_size, n_iters, is_attention=False, hidden_size=256,
-              print_every=1000, plot_every=100, learning_rate=0.01):
+    def __tensor_from_sentence(self, indices):
+        return torch.tensor(indices, dtype=torch.long, device=device).view(-1, 1)
+
+    def __tensors_from_pair(self, pair):
+        input_tensor = self.__tensor_from_sentence(pair[0])
+        target_tensor = self.__tensor_from_sentence(pair[1])
+        return (input_tensor, target_tensor)
+
+    def train(self, encoder, decoder, pairs, n_iters, max_length, is_attention=False, print_every=1000,
+              plot_every=100, learning_rate=0.01):
         """
             Trains the input and output with seq2seq or attention architecture
 
         :param pairs: list
-            Pairs of inputs and corresponding outputs
-        :param vocab_size: int
-            Size of the vocabulary
+            Pairs of inputs and corresponding outputs as integers
         :param n_iters: int
             Number of iterations of training
         :param is_attention: bool
@@ -236,20 +241,17 @@ class TrainIters:
         print_loss_total = 0
         plot_loss_total = 0
 
-        encoder = EncoderRNN(vocab_size, hidden_size).to(device)
-        seq2seq_decoder = DecoderRNN(hidden_size, vocab_size).to(device)
-        attn_decoder = AttnDecoderRNN(hidden_size, vocab_size, dropout_p=0.1).to(device)
+
 
         encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate)
-        decoder_optimizer = optim.SGD(seq2seq_decoder.parameters(),
+        decoder_optimizer = optim.SGD(decoder.parameters(),
                                       lr=learning_rate)  # Same optimizer for both decoders
 
-        # TODO : The following is preprocessing step. Have to create pairs of inputs and outputs
-        training_pairs = [tensors_from_pairs(random.choice(pairs)) for i in range(n_iters)]
+        training_pairs = [self.__tensors_from_pair(random.choice(pairs)) for i in range(n_iters)]
 
         criterion = nn.NLLLoss()
 
-        training_arch = TrainArch(encoder, encoder_optimizer, decoder_optimizer, criterion, max_length=100)
+        training_arch = TrainArch(encoder, encoder_optimizer, decoder_optimizer, criterion, max_length)
 
         for iter in range(1, n_iters + 1):
             training_pair = training_pairs[iter - 1]
@@ -257,12 +259,12 @@ class TrainIters:
             target_tensor = training_pair[1]
 
             if not is_attention:
-                loss = training_arch.seq2seq(input_tensor, target_tensor, seq2seq_decoder)
+                loss = training_arch.seq2seq(input_tensor, target_tensor, decoder)
                 print_loss_total += loss
                 plot_loss_total += loss
 
             else:
-                loss = training_arch.attention(input_tensor, target_tensor, attn_decoder)
+                loss = training_arch.attention(input_tensor, target_tensor, decoder)
                 print_loss_total += loss
                 plot_loss_total += loss
 
@@ -276,5 +278,7 @@ class TrainIters:
                 plot_loss_avg = plot_loss_total / plot_every
                 plot_losses.append(plot_loss_avg)
                 plot_loss_total = 0
+
+
 
         self.__show_plot(plot_losses)
