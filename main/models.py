@@ -1,183 +1,213 @@
-# code source : ''https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html'
+# References: https://medium.com/@adam.wearne/seq2seq-with-pytorch-46dc00ff5164
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
-import numpy as np
+import random
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-class EncoderRNN(nn.Module):
-
-    def __init__(self, input_size, hidden_size):
-        # Here input_size refers to the number of vocabulary
-        # hidden_size is the dimension of embedding
-        super(EncoderRNN, self).__init__()
+class Encoder(nn.Module):
+  
+    def __init__(self, hidden_size, embedding_size,
+                 embedding, answer_embedding, lexical_embedding, n_layers, dropout):
+      
+        super(Encoder, self).__init__()
+        
+        # Initialize network parameters
         self.hidden_size = hidden_size
+        self.embedding_size = embedding_size
+        self.n_layers = n_layers
+        self.dropout = dropout
+        
+        # Embedding layer to be shared with Decoder
+        self.embedding = embedding
+        self.answer_embedding = answer_embedding
+        self.lexical_embedding = lexical_embedding
+        
+        # Bidirectional GRU
+        self.gru = nn.GRU(embedding_size, hidden_size,
+                          num_layers=n_layers,
+                          dropout=dropout,
+                          bidirectional=True)
+        
+    def forward(self, input_sequence, input_lengths, answer_sequence, lexical_sequence):
+        
+        # Convert input_sequence to word embeddings
+        word_embeddings = self.embedding(input_sequence)
+        answer_embeddings = self.answer_embedding(answer_sequence)
+        lexical_embeddings = self.lexical_embedding(lexical_sequence)
 
-        self.embedding = nn.Embedding(input_size, hidden_size)
-        self.gru = nn.GRU(hidden_size, hidden_size)
+        # Concatenate word embeddings from all features
+        final_embeddings = torch.cat((word_embeddings,answer_embeddings,lexical_embeddings), 0)
+        
+        # Pack the sequence of embeddings
+        packed_embeddings = nn.utils.rnn.pack_padded_sequence(final_embeddings, input_lengths)
+        
+        # Run the packed embeddings through the GRU, and then unpack the sequences
+        outputs, hidden = self.gru(packed_embeddings)
+        outputs, _ = nn.utils.rnn.pad_packed_sequence(outputs)
+        
+        # The ouput of a GRU has shape (seq_len, batch, hidden_size * num_directions)
+        # Because the Encoder is bidirectional, combine the results from the 
+        # forward and reversed sequence by simply adding them together.
+        outputs = outputs[:, :, :self.hidden_size] + outputs[:, : ,self.hidden_size:]
 
-    def forward(self, input, hidden):
-        embedded = self.embedding(input).view(1,1,-1)
-        output = embedded
+        return outputs, hidden
 
-        output, hidden = self.gru(output, hidden)
-        return output, hidden
-
-    def initHidden(self):
-        return torch.zeros(1,1,self.hidden_size, device = device)
-
-class DecoderRNN(nn.Module):
-
-    def __init__(self, hidden_size, output_size):
-        super(DecoderRNN, self).__init__()
+class Attention(nn.Module):
+    def __init__(self, hidden_size):
+        super(Attention, self).__init__()
+        
         self.hidden_size = hidden_size
+        
+    def dot_score(self, hidden_state, encoder_states):
+        # Attention model use the dot product formula as global attention
+        return torch.sum(hidden_state * encoder_states, dim=2)
+    
+    def forward(self, hidden, encoder_outputs, mask):
+        attn_scores = self.dot_score(hidden, encoder_outputs)
 
-        self.embedding = nn.Embedding(output_size, hidden_size)
-        self.gru = nn.GRU(hidden_size, hidden_size)
+        # Transpose max_length and batch_size dimensions
+        attn_scores = attn_scores.t()
+        
+        # Apply mask so network does not attend <pad> tokens        
+        attn_scores = attn_scores.masked_fill(mask == 0, -1e10)
+        
+        # Return softmax over attention scores      
+        return F.softmax(attn_scores, dim=1).unsqueeze(1)
 
-        self.out = nn.Linear(hidden_size, output_size)
-        self.softmax = nn.LogSoftmax(dim=1)
-
-    def forward(self, input, hidden):
-
-        output = self.embedding(input).view(1,1,-1)
-        output = F.relu(output)
-
-        output, hidden = self.gru(output, hidden)
-        output = self.softmax(self.out(output[0]))
-
-        return output, hidden
-
-    def initHidden(self):
-        return torch.zeros(1, 1, self.hidden_size, device=device)
-
-
-class AttnDecoderRNN(nn.Module):
-    def __init__(self, hidden_size, output_size, max_length, dropout_p = 0.5):
-        super(AttnDecoderRNN, self).__init__()
+class Decoder(nn.Module):
+    def __init__(self, embedding, embedding_size,
+                 hidden_size, output_size, n_layers, dropout):
+        
+        super(Decoder, self).__init__()
+        
+        # Initialize network params
         self.hidden_size = hidden_size
         self.output_size = output_size
-        self.max_length = max_length
-
-        self.dropout_p = dropout_p
-
-        self.embedding = nn.Embedding(self.output_size, self.hidden_size)
-        self.attn = nn.Linear(self.hidden_size*2, self.max_length)
-        self.attn_combine = nn.Linear(self.hidden_size*2, self.hidden_size)
-        self.dropout = nn.Dropout(self.dropout_p)
-        self.gru = nn.GRU(self.hidden_size, self.hidden_size)
-        self.out = nn.Linear(self.hidden_size, self.output_size)
-
-    def forward(self, input, hidden, encoder_outputs):
-        embedded = self.embedding(input).view(1,1,-1)
-        embedded = self.dropout(embedded)
-
-        attn_weights = F.softmax(
-            self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
-
-        attn_applied = torch.bmm(attn_weights.unsqueeze(0), encoder_outputs.unsqueeze(0))
-
-        output = torch.cat((embedded[0], attn_applied[0]), 1)
-        output = self.attn_combine(output).unsqueeze(0)
-
-        output = F.relu(output)
-        output, hidden = self.gru(output, hidden)
-
-        output = F.log_softmax(self.out(output[0]), dim = 1)
-        return output, hidden, attn_weights
-
-    def  initHidden(self):
-        return torch.zeros(1,1, self.hidden_size, device = device)
-
-class EncoderBiGRU(nn.Module):
-
-    def __init__(self, input_size:int, hidden_size:int, embedding_dim:int, embeddings: np.array = None,
-                 n_layers: int = 1, dropout: float = 0.5):
-        # Here input_size refers to the number of vocabulary
-        # hidden_size is the dimension of embedding
-        super(EncoderBiGRU, self).__init__()
-
-        self.input_size = input_size
-        self.hidden_size = hidden_size
-        self.embedding_dim = embedding_dim
         self.n_layers = n_layers
-        self.gru_dropout = dropout
+        self.dropout = dropout
+        self.embedding = embedding
+                
+        self.gru = nn.GRU(embedding_size, hidden_size, n_layers, 
+                          dropout=dropout)
+        
+        self.concat = nn.Linear(hidden_size * 2, hidden_size)
+        self.out = nn.Linear(hidden_size, output_size)
+        self.attn = Attention(hidden_size)
+        
+    def forward(self, current_token, hidden_state, encoder_outputs, mask):
+      
+        # convert current_token to word_embedding
+        embedded = self.embedding(current_token)
+        
+        # Pass through GRU
+        rnn_output, hidden_state = self.gru(embedded, hidden_state)
+        
+        # Calculate attention weights
+        attention_weights = self.attn(rnn_output, encoder_outputs, mask)
+        
+        # Calculate context vector
+        context = attention_weights.bmm(encoder_outputs.transpose(0, 1))
+        
+        # Concatenate  context vector and GRU output
+        rnn_output = rnn_output.squeeze(0)
+        context = context.squeeze(1)
+        concat_input = torch.cat((rnn_output, context), 1)
+        concat_output = torch.tanh(self.concat(concat_input))
+        
+        # Pass concat_output to final output layer
+        output = self.out(concat_output)
+        
+        # Return output and final hidden state
+        return output, hidden_state
 
-        self.embedding = nn.Embedding(self.input_size, self.embedding_dim)
+class Seq2seq(nn.Module):
+    def __init__(self, embedding_size, hidden_size, vocab_size, 
+                 device, pad_idx, eos_idx, sos_idx, teacher_forcing_ratio=0.5):
+        super(seq2seq, self).__init__()
+        
+        # Initialize embedding layer shared by encoder and decoder
+        self.embedding = nn.Embedding(vocab_size, embedding_size)
+        self.answer_embedding = nn.Embedding(6, embedding_size, padding_idx=1)
+        self.lexical_embedding = nn.Embedding(385, embedding_size, padding_idx=1)
+        
+        # Encoder network
+        self.encoder = Encoder(hidden_size, 
+                               embedding_size, 
+                               self.embedding,
+                               self.answer_embedding,
+                               self.lexical_embedding,
+                               n_layers=2,
+                               dropout=0.5)
+        
+        # Decoder network        
+        self.decoder = Decoder(self.embedding,
+                               embedding_size,
+                               hidden_size,
+                               vocab_size,
+                               n_layers=2,
+                               dropout=0.5)
+        
+        
+        # Indices of special tokens and hardware device 
+        self.pad_idx = pad_idx
+        self.eos_idx = eos_idx
+        self.sos_idx = sos_idx
+        self.device = device
+        
+    def create_mask(self, input_sequence):
 
-        if embeddings is not None:
-            self.embedding.weight.data.copy_(torch.from_numpy(embeddings))
-            self.embedding.requires_grad = False
-
-        self.gru = nn.GRU(input_size=self.embedding_dim, hidden_size=self.hidden_size // 2,
-                          num_layers=self.n_layers, bidirectional=True, dropout=self.gru_dropout)
-
-    def forward(self, inputs, lengths, return_packed=False):
-        embedded = self.embedding(inputs)
-        packed = pack_padded_sequence(embeds, lengths=lengths, batch_first=True)
-
-        outputs, hiddens = self.gru(packed)
-        if not return_packed:
-            return pad_packed_sequence(outputs, True)[0], hiddens
-        return outputs, hiddens
-
-class DecoderLSTM(nn.Module):
-    """
-    """
-
-    def __init__(self, vocab_size: int, embedding_dim: int, hidden_dim: int, n_layers: int = 1,
-                 encoder_hidden_dim: int = None, embeddings: np.array = None,
-                 dropout:float = 0.2):
-        super(DecoderLSTM, self).__init__()
-        self.n_layers = n_layers
-        self.hidden_dim = hidden_dim
-        self.vocab_size = vocab_size
-        self.embedding_dim = embedding_dim
-        self.lstm_dropout=dropout
-        self.word_embeds = nn.Embedding(self.vocab_size, self.embedding_dim)
-
-        assert embeddings is not None
-        self.word_embeds.weight.data.copy_(torch.from_numpy(embeddings))
-        self.word_embeds.requires_grad=False
-
-        self.lstm = nn.LSTM(input_size=embedding_dim, hidden_size=hidden_dim, num_layers=n_layers,dropout=self.lstm_dropout)
-
-        # h_t^T W h_s
-        self.linear_out = nn.Linear(hidden_dim, vocab_size)
-        self.attn = GlobalAttention(encoder_hidden_dim, hidden_dim)
-        # self.dropout = nn.Dropout(dropout)
-
-    def forward(self, inputs, hidden, context, context_lengths, eval_mode=False):
-        """
-        inputs: (tgt_len, batch_size, d)
-        hidden: last hidden state from encoder
-        context: (src_len, batch_size, hidden_size), outputs of encoder
-        """
-        embedded = self.word_embeds(inputs)
-        embedded = embedded.transpose(0, 1)
-        if not eval_mode:
-            if self.n_layers==2:
-                decode_hidden_init = torch.stack((torch.cat([hidden[0][0], hidden[0][1]],1),torch.cat([hidden[0][2], hidden[0][3]], 1)),0)
-                decode_cell_init = torch.stack((torch.cat([hidden[1][0], hidden[1][1]],1),torch.cat([hidden[1][2], hidden[1][3]], 1)),0)
-            else :
-                decode_hidden_init = torch.cat([hidden[0][2], hidden[0][3]], 1).unsqueeze(0)
-                decode_cell_init = torch.cat([hidden[1][2], hidden[1][3]], 1).unsqueeze(0)
-
+        return (input_sequence != self.pad_idx).permute(1, 0)
+        
+    def forward(self, input_sequence, answer_sequence, lexical_sequence, output_sequence, teacher_forcing_ratio):
+      
+        # Unpack input_sequence tuple
+        input_tokens = input_sequence[0]
+        input_lengths = input_sequence[1]
+      
+        # Unpack output_tokens, or create an empty tensor for text generation
+        if output_sequence is None:
+            inference = True
+            output_tokens = torch.zeros((100, input_tokens.shape[1])).long().fill_(self.sos_idx).to(self.device)
         else:
-            decode_hidden_init = hidden[0]
-            decode_cell_init = hidden[1]
-
-
-        # embedded = self.dropout(embedded)
-        decoder_unpacked, decoder_hidden = self.lstm(embedded, (decode_hidden_init,decode_cell_init))
-        # Calculate the attention.
-        attn_outputs, attn_scores = self.attn(
-            decoder_unpacked.transpose(0, 1).contiguous(),  # (len, batch, d) -> (batch, len, d)
-            context,  # (len, batch, d) -> (batch, len, d)
-            context_lengths=context_lengths
-        )
-
-        outputs = self.linear_out(attn_outputs)
-        return outputs, decoder_hidden
+            inference = False
+            output_tokens = output_sequence[0]
+        
+        vocab_size = self.decoder.output_size
+        
+        batch_size = len(input_lengths)
+        max_seq_len = len(output_tokens)
+        
+        # Tensor initialization to store Decoder output
+        outputs = torch.zeros(max_seq_len, batch_size, vocab_size).to(self.device)
+        
+        # Pass through the first half of the network
+        encoder_outputs, hidden = self.encoder(input_tokens, input_lengths, answer_sequence, lexical_sequence)
+        
+        # Ensure dim of hidden_state can be fed into Decoder
+        hidden =  hidden[:self.decoder.n_layers]
+        
+        # First input to the decoder is the <sos> tokens
+        output = output_tokens[0,:]
+        
+        # Create mask
+        mask = self.create_mask(input_tokens)
+        
+        # Step through the length of the output sequence one token at a time
+        # Teacher forcing is used to assist training
+        for t in range(1, max_seq_len):
+            output = output.unsqueeze(0)
+            
+            output, hidden = self.decoder(output, hidden, encoder_outputs, mask)
+            outputs[t] = output
+            teacher_force = random.random() < teacher_forcing_ratio
+            top1 = output.max(1)[1]
+            output = (output_tokens[t] if teacher_force else top1)
+            
+            # If we're in inference mode, keep generating until we produce an
+            # <eos> token
+            if inference and output.item() == self.eos_idx:
+                return outputs[:t]
+        
+        return outputs
