@@ -125,12 +125,13 @@ class Decoder(nn.Module):
 class Seq2seq(nn.Module):
     def __init__(self, embedding_size, hidden_size, vocab_size, 
                  device, pad_idx, eos_idx, sos_idx, teacher_forcing_ratio=0.5):
-        super(seq2seq, self).__init__()
+        super(Seq2seq, self).__init__()
         
         # Initialize embedding layer shared by encoder and decoder
         self.embedding = nn.Embedding(vocab_size, embedding_size)
         self.answer_embedding = nn.Embedding(6, embedding_size, padding_idx=1)
-        self.lexical_embedding = nn.Embedding(385, embedding_size, padding_idx=1)
+        # Size could sometime change, depend on the device that the model is trained on
+        self.lexical_embedding = nn.Embedding(452, embedding_size, padding_idx=1)
         
         # Encoder network
         self.encoder = Encoder(hidden_size, 
