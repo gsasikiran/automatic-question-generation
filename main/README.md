@@ -27,11 +27,11 @@ Train the model.
 python train.py --train-set [PATH TO THE PREPROCESSED TRAIN CSV] --dev-set [PATH TO THE PREPROCESSED DEV CSV] --epochs 100  --save [DIRECTORY TO STORE RESULT] --batch-size 128 --save [DIRECTORY TO STORE RESULT]
 ```
 More flags in this file:
-`--resume` flag to continue from previous training
-`--word-vector` word embeddings to choose; currently support [GloVe](https://nlp.stanford.edu/projects/glove/) and [ConceptNet-Numberbatch](https://github.com/commonsense/conceptnet-numberbatch)
-`--numberbatch-loc` location of downloaded numberbatch word embeddings
-`--test-size` size of test ratio split from dev set
-`--batch-size` size of batch for training
+- `--resume` flag to continue from previous training
+- `--word-vector` word embeddings to choose; currently support [GloVe](https://nlp.stanford.edu/projects/glove/) and [ConceptNet-Numberbatch](https://github.com/commonsense/conceptnet-numberbatch)
+- `--numberbatch-loc` location of downloaded numberbatch word embeddings
+- `--test-size` size of test ratio split from dev set
+- `--batch-size` size of batch for training
 
 
 ## Evaluate
@@ -40,6 +40,6 @@ Generating N number of predictions and evaluate the predictions based on BLEU.
 python evaluate.py --train-set [PATH TO THE PREPROCESSED CSV] --display 100 --load [DIRECTORY TO TRAINED MODEL] --data-folder [DIRECTORY TO VAL AND TEST DATA]
 ```
 More flags in this file:
-`--word-vector` word embeddings to choose; currently support [GloVe](https://nlp.stanford.edu/projects/glove/) and [ConceptNet-Numberbatch](https://github.com/commonsense/conceptnet-numberbatch)
-`--numberbatch-loc` location of downloaded numberbatch word embeddings
-`--batch-size` size of batch for training
+-`--word-vector` word embeddings to choose; currently support [GloVe](https://nlp.stanford.edu/projects/glove/) and [ConceptNet-Numberbatch](https://github.com/commonsense/conceptnet-numberbatch)
+- `--numberbatch-loc` location of downloaded numberbatch word embeddings
+- `--batch-size` size of batch for training
