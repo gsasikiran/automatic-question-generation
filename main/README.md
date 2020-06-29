@@ -10,7 +10,7 @@ torch v1.5, spacy 2.2.4, torchtext 0.3.1
 
 The `directory` argument specifies which directory to store dataset.
 ```shell
-python main.py --directory ../dataset
+python main.py --directory [DIRECTORY TO STORE RESULT]
 ```
 
 ## Squad Parse
