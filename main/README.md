@@ -4,7 +4,7 @@ This directory contains a pytorch implementation of all SQuAD experiments based 
 [Neural Question Generation from Text: A Preliminary Study](https://arxiv.org/pdf/1704.01792.pdf) (EMNLP 2017).
 
 ## Dependencies
-torch v1.5, spacy 2.2.4, torchtext 0.3.1
+torch v1.5, spacy 2.2.4, torchtext 0.3.1, nltk 3.5
 
 ## Download SQuAD dataset
 
