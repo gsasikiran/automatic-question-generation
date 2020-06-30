@@ -12,9 +12,13 @@ import argparse
 from models import Seq2seq
 import random
 import pandas as pd
+import numpy as np
 
+import nltk
 from nltk.translate.bleu_score import corpus_bleu
 from nltk.translate.meteor_score import single_meteor_score
+## Wordnet dependencies from meteor score
+#nltk.download('wordnet')
 
 parser = argparse.ArgumentParser(description='Automatic Question Generation Evaluator')
 parser.add_argument('--train-set', default='../dataset/squad_train.csv', type=str, metavar='PATH',
@@ -140,8 +144,8 @@ for i in example_idx:
   ans = vars(train_data.examples[i])['bio']
   lex = vars(train_data.examples[i])['lex']
 
-  print('src: ', ' '.join(src))
-  print('trg: ', ' '.join(trg))
+  print('context: ', ' '.join(src))
+  print('question: ', ' '.join(trg))
 
   question, logits = predict_question(model, src, ans, lex)
   print('predicted: ', " ".join(question))
@@ -153,8 +157,8 @@ for j in example_idx:
   ans = vars(test_data.examples[j])['bio']
   lex = vars(test_data.examples[j])['lex']
 
-  print('src: ', ' '.join(src))
-  print('trg: ', ' '.join(trg))
+  print('context: ', ' '.join(src))
+  print('question: ', ' '.join(trg))
 
   question, logits = predict_question(model, src, ans, lex)
   print('predicted: ', " ".join(question))
@@ -182,14 +186,14 @@ def calculate_bleu_and_meteor(data, model):
         # print(pred_trg)
         trgs.append(trg)
         # print(trg)
-        meteor_score_.append(single_meteor_score(pred_trg,trg))
+        meteor_score_.append(single_meteor_score(' '.join(pred_trg),' '.join(trg)))
         
     bleu_score = corpus_bleu(pred_trgs, trgs)
-    meteor_score_ = mean(meteor_score_)
+    meteor_score_ = np.mean(meteor_score_)
     
     return bleu_score,meteor_score_
 
-bleu_score, meteor_score_ = calculate_bleu(test_data, model)
+bleu_score, meteor_score_ = calculate_bleu_and_meteor(test_data, model)
 
 print('BLEU score = {:.2f}'.format(bleu_score*100))
 print('METEOR score = {:.2f}'.format(meteor_score_*100))
