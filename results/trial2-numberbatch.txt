@@ -1,0 +1,705 @@
+Epoch:  0
+train loss:  6.00136758815552
+valid loss:  6.21124461718968
+Epoch:  1
+train loss:  5.619400117535353
+valid loss:  5.998244609151568
+Epoch:  2
+train loss:  5.2254937165384785
+valid loss:  5.855411325182233
+Epoch:  3
+train loss:  4.847812571165255
+valid loss:  5.744195086615426
+Epoch:  4
+train loss:  4.592420623393709
+valid loss:  5.7801159960883
+Epoch:  5
+train loss:  4.375747047298907
+valid loss:  5.870729872158596
+Epoch:  6
+train loss:  4.209099404360291
+valid loss:  5.840512820652553
+Epoch:  7
+train loss:  4.076309750662702
+valid loss:  5.903523462159293
+Epoch:  8
+train loss:  3.960968101106518
+valid loss:  5.898176108087812
+Epoch:  9
+train loss:  3.8743581973067442
+valid loss:  6.040549857275827
+Epoch:  10
+train loss:  3.80222180523746
+valid loss:  6.029951299939837
+Epoch:  11
+train loss:  3.740309688832037
+valid loss:  6.053918889590672
+Epoch:  12
+train loss:  3.6781337214405334
+valid loss:  6.163487809044974
+Epoch:  13
+train loss:  3.628422457523739
+valid loss:  6.2126186064311435
+Epoch:  14
+train loss:  3.5630179153457355
+valid loss:  6.253513199942453
+Epoch:  15
+train loss:  3.5386949830247096
+valid loss:  6.215493747166225
+Epoch:  16
+train loss:  3.4842614762565454
+valid loss:  6.311282328196934
+Epoch:  17
+train loss:  3.432603832783947
+valid loss:  6.349484869412014
+Epoch:  18
+train loss:  3.413375290851013
+valid loss:  6.354468022074018
+Epoch:  19
+train loss:  3.399198332291473
+valid loss:  6.362260580062866
+Epoch:  20
+train loss:  3.3602289280783793
+valid loss:  6.436665994780404
+Epoch:  21
+train loss:  3.324957335194147
+valid loss:  6.473545960017613
+Epoch:  22
+train loss:  3.3062880233412755
+valid loss:  6.507286088807242
+Epoch:  23
+train loss:  3.306261281854856
+valid loss:  6.5553019898278375
+Epoch:  24
+train loss:  3.2553039797388887
+valid loss:  6.601275784628732
+Epoch:  25
+train loss:  3.2377355894232873
+valid loss:  6.6115787880761285
+Epoch:  26
+train loss:  3.220508839361099
+valid loss:  6.638996839523315
+Epoch:  27
+train loss:  3.205148562364887
+valid loss:  6.674172742026193
+Epoch:  28
+train loss:  3.1757085564326024
+valid loss:  6.692725283758981
+Epoch:  29
+train loss:  3.1517914555842554
+valid loss:  6.723214711461749
+Epoch:  30
+train loss:  3.1320889127149196
+valid loss:  6.772543975285122
+Epoch:  31
+train loss:  3.12501644573455
+valid loss:  6.807197792189462
+Epoch:  32
+train loss:  3.109943793964105
+valid loss:  6.841274380683899
+Epoch:  33
+train loss:  3.090624372437377
+valid loss:  6.824520094054086
+Epoch:  34
+train loss:  3.086916208501185
+valid loss:  6.848549144608634
+Epoch:  35
+train loss:  3.0548988677802567
+valid loss:  6.836608971868243
+Epoch:  36
+train loss:  3.0533371795264967
+valid loss:  6.902775474957058
+Epoch:  37
+train loss:  3.0381594359348285
+valid loss:  6.915938428470066
+Epoch:  38
+train loss:  3.020841378576037
+valid loss:  6.9962771620069235
+Epoch:  39
+train loss:  3.0045072936450183
+valid loss:  6.968314698764256
+Epoch:  40
+train loss:  3.0156810807760612
+valid loss:  7.024662358420236
+Epoch:  41
+train loss:  2.9676413164054565
+valid loss:  7.012961557933262
+Epoch:  42
+train loss:  2.9636204652159206
+valid loss:  7.102808833122253
+Epoch:  43
+train loss:  2.9613000623611287
+valid loss:  7.073395269257682
+Epoch:  44
+train loss:  2.9274871145778127
+valid loss:  7.079682060650417
+Epoch:  45
+train loss:  2.9015568643369667
+valid loss:  7.143266950334821
+Epoch:  46
+train loss:  2.9132689147514963
+valid loss:  7.147353257451739
+Epoch:  47
+train loss:  2.905437886656442
+valid loss:  7.174459661756243
+Epoch:  48
+train loss:  2.8979253888247176
+valid loss:  7.179085271699088
+Epoch:  49
+train loss:  2.840152745508937
+valid loss:  7.174448387963431
+Epoch:  50
+train loss:  2.873036206996944
+valid loss:  7.206158774239676
+Epoch:  51
+train loss:  2.876630901237465
+valid loss:  7.18634489604405
+Epoch:  52
+train loss:  2.836147849178408
+valid loss:  7.189087799617222
+Epoch:  53
+train loss:  2.829089885604978
+valid loss:  7.230470708438328
+Epoch:  54
+train loss:  2.7971532164658837
+valid loss:  7.305240477834429
+Epoch:  55
+train loss:  2.8188740439691067
+valid loss:  7.293352161134992
+Epoch:  56
+train loss:  2.7949463737373614
+valid loss:  7.365120036261422
+Epoch:  57
+train loss:  2.7870304788059763
+valid loss:  7.3860843522208075
+Epoch:  58
+train loss:  2.7833218410742764
+valid loss:  7.33517244883946
+Epoch:  59
+train loss:  2.762009900732293
+valid loss:  7.39291638987405
+Epoch:  60
+train loss:  2.7752867177845335
+valid loss:  7.37745109626225
+Epoch:  61
+train loss:  2.7506630258073517
+valid loss:  7.386095064026969
+Epoch:  62
+train loss:  2.7571523864557044
+valid loss:  7.396735634122576
+Epoch:  63
+train loss:  2.744544140256071
+valid loss:  7.38773420878819
+Epoch:  64
+train loss:  2.725316516433544
+valid loss:  7.468547531536648
+Epoch:  65
+train loss:  2.7133761847919993
+valid loss:  7.453543560845511
+Epoch:  66
+train loss:  2.712520264783715
+valid loss:  7.48435960497175
+Epoch:  67
+train loss:  2.71164634276887
+valid loss:  7.538281287465777
+Epoch:  68
+train loss:  2.6848570851278257
+valid loss:  7.520494018282209
+Epoch:  69
+train loss:  2.6775748668872805
+valid loss:  7.5859900542667935
+Epoch:  70
+train loss:  2.6692808703889557
+valid loss:  7.577685049601963
+Epoch:  71
+train loss:  2.6561133874410268
+valid loss:  7.617920517921448
+Epoch:  72
+train loss:  2.672898106883857
+valid loss:  7.587396264076233
+Epoch:  73
+train loss:  2.634729746981388
+valid loss:  7.579433560371399
+Epoch:  74
+train loss:  2.6564721397843516
+valid loss:  7.583335178239005
+Epoch:  75
+train loss:  2.6459794366207627
+valid loss:  7.675818068640573
+Epoch:  76
+train loss:  2.6052001155510736
+valid loss:  7.684441924095154
+Epoch:  77
+train loss:  2.6333918549244726
+valid loss:  7.6521003757204324
+Epoch:  78
+train loss:  2.63642019998571
+valid loss:  7.6883541856493265
+Epoch:  79
+train loss:  2.6060176004488405
+valid loss:  7.698264649936131
+Epoch:  80
+train loss:  2.6050762176747644
+valid loss:  7.787882924079895
+Epoch:  81
+train loss:  2.591122607136615
+valid loss:  7.818526097706386
+Epoch:  82
+train loss:  2.590244933597239
+valid loss:  7.711799144744873
+Epoch:  83
+train loss:  2.580267250713352
+valid loss:  7.792643887656076
+Epoch:  84
+train loss:  2.5911739534671923
+valid loss:  7.799707208360944
+Epoch:  85
+train loss:  2.5748616783377933
+valid loss:  7.860741291727338
+Epoch:  86
+train loss:  2.5762251946596213
+valid loss:  7.804487364632743
+Epoch:  87
+train loss:  2.555106601139514
+valid loss:  7.844783817018781
+Epoch:  88
+train loss:  2.548207560161145
+valid loss:  7.8644357579095026
+Epoch:  89
+train loss:  2.5445342292027573
+valid loss:  7.923307299613953
+Epoch:  90
+train loss:  2.5441394789296115
+valid loss:  7.8891569546290805
+Epoch:  91
+train loss:  2.504486850714192
+valid loss:  7.9921903269631525
+Epoch:  92
+train loss:  2.5294723958800653
+valid loss:  7.969031385013035
+Epoch:  93
+train loss:  2.5231376727266097
+valid loss:  7.912850686482021
+Epoch:  94
+train loss:  2.4921878482689452
+valid loss:  7.966354165758405
+Epoch:  95
+train loss:  2.5105966352971896
+valid loss:  8.009522540228707
+Epoch:  96
+train loss:  2.50312262580486
+valid loss:  7.917418122291565
+Epoch:  97
+train loss:  2.5026346639281285
+valid loss:  7.962385296821594
+Epoch:  98
+train loss:  2.4666938245939902
+valid loss:  8.076888527188983
+Epoch:  99
+train loss:  2.4737689144127035
+valid loss:  8.068302324840001
+
+Test Loss: 8.01
+
+context:  at the 52nd annual grammy awards , beyoncé received ten nominations , including album of the year for i am ... sasha fierce , record of the year for " halo " , and song of the year for " single ladies ( put a ring on it ) " , among others . she tied with lauryn hill for most grammy nominations in a single year by a female artist . in 2010 , beyoncé was featured on lady gaga 's single " telephone " and its music video . the song topped the us pop songs chart , becoming the sixth number - one for both beyoncé and gaga , tying them with mariah carey for most number - ones since the nielsen top 40 airplay chart launched in 1992 . " telephone " received a grammy award nomination for best pop collaboration with vocals .
+question:  who did beyoncé tie with for the most grammy nominations for female artists ?
+predicted:  beyonce tied with beyonce for which singer ?
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  what is the name of beyoncé 's fourth studio album ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  the remaining band members recorded " independent women part i " , which appeared on the soundtrack to the 2000 film , charlie 's angels . it became their best - charting single , topping the u.s. billboard hot 100 chart for eleven consecutive weeks . in early 2001 , while destiny 's child was completing their third album , beyoncé landed a major role in the mtv made - for - television film , carmen : a hip hopera , starring alongside american actor mekhi phifer . set in philadelphia , the film is a modern interpretation of the 19th century opera carmen by french composer georges bizet . when the third album survivor was released in may 2001 , luckett and roberson filed a lawsuit claiming that the songs were aimed at them . the album debuted at number one on the u.s. billboard 200 , with first - week sales of 663,000 copies sold . the album spawned other number - one hits , " bootylicious " and the title track , " survivor " , the latter of which earned the group a grammy award for best r&b performance by a duo or group with vocals . after releasing their holiday album 8 days of christmas in october 2001 , the group announced a hiatus to further pursue solo careers .
+question:  what was the name of destiny child 's third album ?
+predicted:  what filed a lawsuit from which album ?
+
+context:  the remaining band members recorded " independent women part i " , which appeared on the soundtrack to the 2000 film , charlie 's angels . it became their best - charting single , topping the u.s. billboard hot 100 chart for eleven consecutive weeks . in early 2001 , while destiny 's child was completing their third album , beyoncé landed a major role in the mtv made - for - television film , carmen : a hip hopera , starring alongside american actor mekhi phifer . set in philadelphia , the film is a modern interpretation of the 19th century opera carmen by french composer georges bizet . when the third album survivor was released in may 2001 , luckett and roberson filed a lawsuit claiming that the songs were aimed at them . the album debuted at number one on the u.s. billboard 200 , with first - week sales of 663,000 copies sold . the album spawned other number - one hits , " bootylicious " and the title track , " survivor " , the latter of which earned the group a grammy award for best r&b performance by a duo or group with vocals . after releasing their holiday album 8 days of christmas in october 2001 , the group announced a hiatus to further pursue solo careers .
+question:  who filed a lawsuit over survivor ?
+predicted:  what filed a lawsuit from which album ?
+
+context:  at age eight , beyoncé and childhood friend kelly rowland met latavia roberson while in an audition for an all - girl entertainment group . they were placed into a group with three other girls as girl 's tyme , and rapped and danced on the talent show circuit in houston . after seeing the group , r&b producer arne frager brought them to his northern california studio and placed them in star search , the largest talent show on national tv at the time . girl 's tyme failed to win , and beyoncé later said the song they performed was not good . in 1995 beyoncé 's father resigned from his job to manage the group . the move reduced beyoncé 's family 's income by half , and her parents were forced to move into separated apartments . mathew cut the original line - up to four and the group continued performing as an opening act for other established r&b girl groups . the girls auditioned before record labels and were finally signed to elektra records , moving to atlanta records briefly to work on their first recording , only to be cut by the company . this put further strain on the family , and beyoncé 's parents separated . on october 5 , 1995 , dwayne wiggins 's grass roots entertainment signed the group . in 1996 , the girls began recording their debut album under an agreement with sony music , the knowles family reunited , and shortly after , the group got a contract with columbia records .
+question:  at what age did beyonce meet latavia robertson ?
+predicted:  what was the name of beyoncé 's group went in manage the girls ?
+
+context:  in 2011 , documents obtained by wikileaks revealed that beyoncé was one of many entertainers who performed for the family of libyan ruler muammar gaddafi . rolling stone reported that the music industry was urging them to return the money they earned for the concerts ; a spokesperson for beyoncé later confirmed to the huffington post that she donated the money to the clinton bush haiti fund . later that year she became the first solo female artist to headline the main pyramid stage at the 2011 glastonbury festival in over twenty years , and was named the highest - paid performer in the world per minute .
+question:  beyonce was listed in 2011 as the highest paid performer per what ?
+predicted:  beyonce was listed in 2011 2011 confirm her donations to the libyan performance ?
+
+context:  beyoncé attended st. mary 's elementary school in fredericksburg , texas , where she enrolled in dance classes . her singing talent was discovered when dance instructor darlette johnson began humming a song and she finished it , able to hit the high - pitched notes . beyoncé 's interest in music and performing continued after winning a school talent show at age seven , singing john lennon 's " imagine " to beat 15/16-year - olds . in fall of 1990 , beyoncé enrolled in parker elementary school , a music magnet school in houston , where she would perform with the school 's choir . she also attended the high school for the performing and visual arts and later alief elsik high school . beyoncé was also a member of the choir at st. john 's united methodist church as a soloist for two years .
+question:  i which church was beyonce a member and soloist in the choir ?
+predicted:  what was the name of beyoncé 's first dance instructor ?
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  how many copies of 4 sold in the first week ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  beyoncé giselle knowles - carter ( /biːˈjɒnseɪ/ bee - yon - say ) ( born september 4 , 1981 ) is an american singer , songwriter , record producer and actress . born and raised in houston , texas , she performed in various singing and dancing competitions as a child , and rose to fame in the late 1990s as lead singer of r&b girl - group destiny 's child . managed by her father , mathew knowles , the group became one of the world 's best - selling girl groups of all time . their hiatus saw the release of beyoncé 's debut album , dangerously in love ( 2003 ) , which established her as a solo artist worldwide , earned five grammy awards and featured the billboard hot 100 number - one singles " crazy in love " and " baby boy " .
+question:  when did beyoncé release dangerously in love ?
+predicted:  when did beyonce become a child ?
+
+context:  the remaining band members recorded " independent women part i " , which appeared on the soundtrack to the 2000 film , charlie 's angels . it became their best - charting single , topping the u.s. billboard hot 100 chart for eleven consecutive weeks . in early 2001 , while destiny 's child was completing their third album , beyoncé landed a major role in the mtv made - for - television film , carmen : a hip hopera , starring alongside american actor mekhi phifer . set in philadelphia , the film is a modern interpretation of the 19th century opera carmen by french composer georges bizet . when the third album survivor was released in may 2001 , luckett and roberson filed a lawsuit claiming that the songs were aimed at them . the album debuted at number one on the u.s. billboard 200 , with first - week sales of 663,000 copies sold . the album spawned other number - one hits , " bootylicious " and the title track , " survivor " , the latter of which earned the group a grammy award for best r&b performance by a duo or group with vocals . after releasing their holiday album 8 days of christmas in october 2001 , the group announced a hiatus to further pursue solo careers .
+question:  how many weeks did their single " independent women part i " stay on top ?
+predicted:  what filed a lawsuit from which album ?
+
+context:  following the disbandment of destiny 's child in june 2005 , she released her second solo album , b'day ( 2006 ) , which contained hits " déjà vu " , " irreplaceable " , and " beautiful liar " . beyoncé also ventured into acting , with a golden globe - nominated performance in dreamgirls ( 2006 ) , and starring roles in the pink panther ( 2006 ) and obsessed ( 2009 ) . her marriage to rapper jay z and portrayal of etta james in cadillac records ( 2008 ) influenced her third album , i am ... sasha fierce ( 2008 ) , which saw the birth of her alter - ego sasha fierce and earned a record - setting six grammy awards in 2010 , including song of the year for " single ladies ( put a ring on it ) " . beyoncé took a hiatus from music in 2010 and took over management of her career ; her fourth album 4 ( 2011 ) was subsequently mellower in tone , exploring 1970s funk , 1980s pop , and 1990s soul . her critically acclaimed fifth studio album , beyoncé ( 2013 ) , was distinguished from previous releases by its experimental production and exploration of darker themes .
+question:  who is beyoncé married to ?
+predicted:  what did beyonce 's her hiatus album ?
+
+context:  beyoncé giselle knowles - carter ( /biːˈjɒnseɪ/ bee - yon - say ) ( born september 4 , 1981 ) is an american singer , songwriter , record producer and actress . born and raised in houston , texas , she performed in various singing and dancing competitions as a child , and rose to fame in the late 1990s as lead singer of r&b girl - group destiny 's child . managed by her father , mathew knowles , the group became one of the world 's best - selling girl groups of all time . their hiatus saw the release of beyoncé 's debut album , dangerously in love ( 2003 ) , which established her as a solo artist worldwide , earned five grammy awards and featured the billboard hot 100 number - one singles " crazy in love " and " baby boy " .
+question:  in what r&b group was she the lead singer ?
+predicted:  when did beyonce become a child ?
+
+context:  beyoncé giselle knowles - carter ( /biːˈjɒnseɪ/ bee - yon - say ) ( born september 4 , 1981 ) is an american singer , songwriter , record producer and actress . born and raised in houston , texas , she performed in various singing and dancing competitions as a child , and rose to fame in the late 1990s as lead singer of r&b girl - group destiny 's child . managed by her father , mathew knowles , the group became one of the world 's best - selling girl groups of all time . their hiatus saw the release of beyoncé 's debut album , dangerously in love ( 2003 ) , which established her as a solo artist worldwide , earned five grammy awards and featured the billboard hot 100 number - one singles " crazy in love " and " baby boy " .
+question:  what album made her a worldwide known artist ?
+predicted:  when did beyonce become a child ?
+
+context:  in 2011 , documents obtained by wikileaks revealed that beyoncé was one of many entertainers who performed for the family of libyan ruler muammar gaddafi . rolling stone reported that the music industry was urging them to return the money they earned for the concerts ; a spokesperson for beyoncé later confirmed to the huffington post that she donated the money to the clinton bush haiti fund . later that year she became the first solo female artist to headline the main pyramid stage at the 2011 glastonbury festival in over twenty years , and was named the highest - paid performer in the world per minute .
+question:  hoe did everyone learn that beyonce performed for kaddafi ?
+predicted:  beyonce was listed in 2011 2011 confirm her donations to the libyan performance ?
+
+context:  beyoncé giselle knowles was born in houston , texas , to celestine ann " tina " knowles ( née beyincé ) , a hairdresser and salon owner , and mathew knowles , a xerox sales manager . beyoncé 's name is a tribute to her mother 's maiden name . beyoncé 's younger sister solange is also a singer and a former member of destiny 's child . mathew is african - american , while tina is of louisiana creole descent ( with african , native american , french , cajun , and distant irish and spanish ancestry ) . through her mother , beyoncé is a descendant of acadian leader joseph broussard . she was raised in a methodist household .
+question:  where did beyonce get her name from ?
+predicted:  what is the descendant of beyoncé 's sister ?
+
+context:  following the disbandment of destiny 's child in june 2005 , she released her second solo album , b'day ( 2006 ) , which contained hits " déjà vu " , " irreplaceable " , and " beautiful liar " . beyoncé also ventured into acting , with a golden globe - nominated performance in dreamgirls ( 2006 ) , and starring roles in the pink panther ( 2006 ) and obsessed ( 2009 ) . her marriage to rapper jay z and portrayal of etta james in cadillac records ( 2008 ) influenced her third album , i am ... sasha fierce ( 2008 ) , which saw the birth of her alter - ego sasha fierce and earned a record - setting six grammy awards in 2010 , including song of the year for " single ladies ( put a ring on it ) " . beyoncé took a hiatus from music in 2010 and took over management of her career ; her fourth album 4 ( 2011 ) was subsequently mellower in tone , exploring 1970s funk , 1980s pop , and 1990s soul . her critically acclaimed fifth studio album , beyoncé ( 2013 ) , was distinguished from previous releases by its experimental production and exploration of darker themes .
+question:  when did beyonce take a hiatus in her career and take control of her management ?
+predicted:  what did beyonce 's her hiatus album ?
+
+context:  beyoncé embarked on the mrs. carter show world tour on april 15 in belgrade , serbia ; the tour included 132 dates that ran through to march 2014 . it became the most successful tour of her career and one of the most - successful tours of all time . in may , beyoncé 's cover of amy winehouse 's " back to black " with andré 3000 on the great gatsby soundtrack was released . she was also honorary chair of the 2013 met gala . beyoncé voiced queen tara in the 3d cgi animated film , epic , released by 20th century fox on may 24 , and recorded an original song for the film , " rise up " , co - written with sia .
+question:  which character in the film , epic , was voiced by beyoncé ?
+predicted:  beyonce voiced the honorary chair for epic epic epic ?
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  beyonce 's fourth album debuted in what year ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  beyoncé giselle knowles - carter ( /biːˈjɒnseɪ/ bee - yon - say ) ( born september 4 , 1981 ) is an american singer , songwriter , record producer and actress . born and raised in houston , texas , she performed in various singing and dancing competitions as a child , and rose to fame in the late 1990s as lead singer of r&b girl - group destiny 's child . managed by her father , mathew knowles , the group became one of the world 's best - selling girl groups of all time . their hiatus saw the release of beyoncé 's debut album , dangerously in love ( 2003 ) , which established her as a solo artist worldwide , earned five grammy awards and featured the billboard hot 100 number - one singles " crazy in love " and " baby boy " .
+question:  what was the name of beyoncé 's first solo album ?
+predicted:  when did beyonce become a child ?
+
+context:  in 2011 , documents obtained by wikileaks revealed that beyoncé was one of many entertainers who performed for the family of libyan ruler muammar gaddafi . rolling stone reported that the music industry was urging them to return the money they earned for the concerts ; a spokesperson for beyoncé later confirmed to the huffington post that she donated the money to the clinton bush haiti fund . later that year she became the first solo female artist to headline the main pyramid stage at the 2011 glastonbury festival in over twenty years , and was named the highest - paid performer in the world per minute .
+question:  who did she tell about the donation ?
+predicted:  beyonce was listed in 2011 2011 confirm her donations to the libyan performance ?
+
+context:  on april 4 , 2008 , beyoncé married jay z. she publicly revealed their marriage in a video montage at the listening party for her third studio album , i am ... sasha fierce , in manhattan 's sony club on october 22 , 2008 . i am ... sasha fierce was released on november 18 , 2008 in the united states . the album formally introduces beyoncé 's alter ego sasha fierce , conceived during the making of her 2003 single " crazy in love " , selling 482,000 copies in its first week , debuting atop the billboard 200 , and giving beyoncé her third consecutive number - one album in the us . the album featured the number - one song " single ladies ( put a ring on it ) " and the top - five songs " if i were a boy " and " halo " . achieving the accomplishment of becoming her longest - running hot 100 single in her career , " halo " 's success in the us helped beyoncé attain more top - ten singles on the list than any other woman during the 2000s . it also included the successful " sweet dreams " , and singles " diva " , " ego " , " broken - hearted girl " and " video phone " . the music video for " single ladies " has been parodied and imitated around the world , spawning the " first major dance craze " of the internet age according to the toronto star . the video has won several awards , including best video at the 2009 mtv europe music awards , the 2009 scottish mobo awards , and the 2009 bet awards . at the 2009 mtv video music awards , the video was nominated for nine awards , ultimately winning three including video of the year . its failure to win the best female video category , which went to american country pop singer taylor swift 's " you belong with me " , led to kanye west interrupting the ceremony and beyoncé improvising a re - presentation of swift 's award during her own acceptance speech . in march 2009 , beyoncé embarked on the i am ... world tour , her second headlining worldwide concert tour , consisting of 108 shows , grossing $ 119.5 million .
+question:  for which decade , did beyonce have more top ten songs than any other woman ?
+predicted:  beyonce got beyonce 's alter ego am ... sasha fierce , woman award ?
+
+context:  in november 2003 , she embarked on the dangerously in love tour in europe and later toured alongside missy elliott and alicia keys for the verizon ladies first tour in north america . on february 1 , 2004 , beyoncé performed the american national anthem at super bowl xxxviii , at the reliant stadium in houston , texas . after the release of dangerously in love , beyoncé had planned to produce a follow - up album using several of the left - over tracks . however , this was put on hold so she could concentrate on recording destiny fulfilled , the final studio album by destiny 's child . released on november 15 , 2004 , in the us and peaking at number two on the billboard 200 , destiny fulfilled included the singles " lose my breath " and " soldier " , which reached the top five on the billboard hot 100 chart . destiny 's child embarked on a worldwide concert tour , destiny fulfilled ... and lovin' it and during the last stop of their european tour , in barcelona on june 11 , 2005 , rowland announced that destiny 's child would disband following the north american leg of the tour . the group released their first compilation album number 1 's on october 25 , 2005 , in the us and accepted a star on the hollywood walk of fame in march 2006 .
+question:  destiny 's child 's final album was named what ?
+predicted:  destiny 's child got child from star from her walk in what year ?
+
+context:  beyoncé giselle knowles was born in houston , texas , to celestine ann " tina " knowles ( née beyincé ) , a hairdresser and salon owner , and mathew knowles , a xerox sales manager . beyoncé 's name is a tribute to her mother 's maiden name . beyoncé 's younger sister solange is also a singer and a former member of destiny 's child . mathew is african - american , while tina is of louisiana creole descent ( with african , native american , french , cajun , and distant irish and spanish ancestry ) . through her mother , beyoncé is a descendant of acadian leader joseph broussard . she was raised in a methodist household .
+question:  what younger sister of beyonce also appeared in destiny 's child ?
+predicted:  what is the descendant of beyoncé 's sister ?
+
+context:  beyoncé 's first solo recording was a feature on jay z 's " ' 03 bonnie & clyde " that was released in october 2002 , peaking at number four on the u.s. billboard hot 100 chart . her first solo album dangerously in love was released on june 24 , 2003 , after michelle williams and kelly rowland had released their solo efforts . the album sold 317,000 copies in its first week , debuted atop the billboard 200 , and has since sold 11 million copies worldwide . the album 's lead single , " crazy in love " , featuring jay z , became beyoncé 's first number - one single as a solo artist in the us . the single " baby boy " also reached number one , and singles , " me , myself and i " and " naughty girl " , both reached the top - five . the album earned beyoncé a then record - tying five awards at the 46th annual grammy awards ; best contemporary r&b album , best female r&b vocal performance for " dangerously in love 2 " , best r&b song and best rap / sung collaboration for " crazy in love " , and best r&b performance by a duo or group with vocals for " the closer i get to you " with luther vandross .
+question:  how many top five singles came from her first album ?
+predicted:  beyonce 's first solo album herself win in what year ?
+
+context:  on april 4 , 2008 , beyoncé married jay z. she publicly revealed their marriage in a video montage at the listening party for her third studio album , i am ... sasha fierce , in manhattan 's sony club on october 22 , 2008 . i am ... sasha fierce was released on november 18 , 2008 in the united states . the album formally introduces beyoncé 's alter ego sasha fierce , conceived during the making of her 2003 single " crazy in love " , selling 482,000 copies in its first week , debuting atop the billboard 200 , and giving beyoncé her third consecutive number - one album in the us . the album featured the number - one song " single ladies ( put a ring on it ) " and the top - five songs " if i were a boy " and " halo " . achieving the accomplishment of becoming her longest - running hot 100 single in her career , " halo " 's success in the us helped beyoncé attain more top - ten singles on the list than any other woman during the 2000s . it also included the successful " sweet dreams " , and singles " diva " , " ego " , " broken - hearted girl " and " video phone " . the music video for " single ladies " has been parodied and imitated around the world , spawning the " first major dance craze " of the internet age according to the toronto star . the video has won several awards , including best video at the 2009 mtv europe music awards , the 2009 scottish mobo awards , and the 2009 bet awards . at the 2009 mtv video music awards , the video was nominated for nine awards , ultimately winning three including video of the year . its failure to win the best female video category , which went to american country pop singer taylor swift ' s " you belong with me " , led to kanye west interrupting the ceremony and beyoncé improvising a re - presentation of swift 's award during her own acceptance speech . in march 2009 , beyoncé embarked on the i am ... world tour , her second headlining worldwide concert tour , consisting of 108 shows , grossing $ 119.5 million .
+question:  who beat out beyonce for best female video ?
+predicted:  beyonce got beyonce 's alter ego am ... sasha fierce , woman award ?
+
+context:  beyoncé embarked on the mrs. carter show world tour on april 15 in belgrade , serbia ; the tour included 132 dates that ran through to march 2014 . it became the most successful tour of her career and one of the most - successful tours of all time . in may , beyoncé 's cover of amy winehouse 's " back to black " with andré 3000 on the great gatsby soundtrack was released . she was also honorary chair of the 2013 met gala . beyoncé voiced queen tara in the 3d cgi animated film , epic , released by 20th century fox on may 24 , and recorded an original song for the film , " rise up " , co - written with sia .
+question:  one of beyonce 's most successful tours yet was which one ?
+predicted:  beyonce voiced the honorary chair for epic epic epic ?
+
+context:  a self - described " modern - day feminist " , beyoncé creates songs that are often characterized by themes of love , relationships , and monogamy , as well as female sexuality and empowerment . on stage , her dynamic , highly choreographed performances have led to critics hailing her as one of the best entertainers in contemporary popular music . throughout a career spanning 19 years , she has sold over 118 million records as a solo artist , and a further 60 million with destiny 's child , making her one of the best - selling music artists of all time . she has won 20 grammy awards and is the most nominated woman in the award 's history . the recording industry association of america recognized her as the top certified artist in america during the 2000s decade . in 2009 , billboard named her the top radio songs artist of the decade , the top female artist of the 2000s and their artist of the millennium in 2011 . time listed her among the 100 most influential people in the world in 2013 and 2014 . forbes magazine also listed her as the most powerful female musician of 2015 .
+question:  which magazine declared her the most dominant woman musician ?
+predicted:  how magazine named her as the most dominant woman musician ?
+
+context:  letoya luckett and roberson became unhappy with mathew 's managing of the band and eventually were replaced by farrah franklin and michelle williams . beyoncé experienced depression following the split with luckett and roberson after being publicly blamed by the media , critics , and blogs for its cause . her long - standing boyfriend left her at this time . the depression was so severe it lasted for a couple of years , during which she occasionally kept herself in her bedroom for days and refused to eat anything . beyoncé stated that she struggled to speak about her depression because destiny 's child had just won their first grammy award and she feared no one would take her seriously . beyoncé would later speak of her mother as the person who helped her fight it . franklin was dismissed , leaving just beyoncé , rowland , and williams .
+question:  what event occured after she was publicly criticized ?
+predicted:  what event occured in her depression ?
+
+context:  in november 2003 , she embarked on the dangerously in love tour in europe and later toured alongside missy elliott and alicia keys for the verizon ladies first tour in north america . on february 1 , 2004 , beyoncé performed the american national anthem at super bowl xxxviii , at the reliant stadium in houston , texas . after the release of dangerously in love , beyoncé had planned to produce a follow - up album using several of the left - over tracks . however , this was put on hold so she could concentrate on recording destiny fulfilled , the final studio album by destiny 's child . released on november 15 , 2004 , in the us and peaking at number two on the billboard 200 , destiny fulfilled included the singles " lose my breath " and " soldier " , which reached the top five on the billboard hot 100 chart . destiny 's child embarked on a worldwide concert tour , destiny fulfilled ... and lovin' it and during the last stop of their european tour , in barcelona on june 11 , 2005 , rowland announced that destiny 's child would disband following the north american leg of the tour . the group released their first compilation album number 1 's on october 25 , 2005 , in the us and accepted a star on the hollywood walk of fame in march 2006 .
+question:  what was the name of the final album of destiny 's child ?
+predicted:  destiny 's child got child from star from her walk in what year ?
+
+context:  in january 2013 , destiny 's child released love songs , a compilation album of the romance - themed songs from their previous albums and a newly recorded track , " nuclear " . beyoncé performed the american national anthem singing along with a pre - recorded track at president obama ' s second inauguration in washington , d.c. the following month , beyoncé performed at the super bowl xlvii halftime show , held at the mercedes - benz superdome in new orleans . the performance stands as the second most tweeted about moment in history at 268,000 tweets per minute . at the 55th annual grammy awards , beyoncé won for best traditional r&b performance for " love on top " . her feature - length documentary film , life is but a dream , first aired on hbo on february 16 , 2013 . the film , which she directed and produced herself , featured footage from her childhood , her as a mother and businesswoman , recording , rehearsing for live performances , and her return to the spotlight following blue ivy 's birth . its dvd release in november 2013 was accompanied by footage from the revel presents : beyoncé live concerts and a new song , " god made you beautiful " . in february 2013 , beyoncé signed a global publishing agreement with warner / chappell music , which would cover her future songwriting and then - upcoming studio album .
+question:  at whose inauguration did she perform the national anthem ?
+predicted:  what was the name of the second album love ?
+
+context:  on january 7 , 2012 , beyoncé gave birth to her first child , a daughter , blue ivy carter , at lenox hill hospital in new york . five months later , she performed for four nights at revel atlantic city 's ovation hall to celebrate the resort 's opening , her first performances since giving birth to blue ivy .
+question:  when did beyonce have her first child ?
+predicted:  how many nights did beyonce perform at atlantic resort ?
+
+context:  the group changed their name to destiny 's child in 1996 , based upon a passage in the book of isaiah . in 1997 , destiny 's child released their major label debut song " killing time " on the soundtrack to the 1997 film , men in black . the following year , the group released their self - titled debut album , scoring their first major hit " no , no , no " . the album established the group as a viable act in the music industry , with moderate sales and winning the group three soul train lady of soul awards for best r&b / soul album of the year , best r&b / soul or rap new artist , and best r&b / soul single for " no , no , no " . the group released their multi - platinum second album the writing 's on the wall in 1999 . the record features some of the group 's most widely known songs such as " bills , bills , bills " , the group 's first number - one single , " jumpin ' jumpin ' " and " say my name " , which became their most successful song at the time , and would remain one of their signature songs . " say my name " won the best r&b performance by a duo or group with vocals and the best r&b song at the 43rd annual grammy awards . the writing 's on the wall sold more than eight million copies worldwide . during this time , beyoncé recorded a duet with marc nelson , an original member of boyz ii men , on the song " after all is said and done " for the soundtrack to the 1999 film , the best man .
+question:  the name destiny 's child was based on a quote in which book of the bible ?
+predicted:  what was destiny 's child 's album hit ?
+
+context:  in january 2013 , destiny 's child released love songs , a compilation album of the romance- themed songs from their previous albums and a newly recorded track , " nuclear " . beyoncé performed the american national anthem singing along with a pre - recorded track at president obama 's second inauguration in washington , d.c. the following month , beyoncé performed at the super bowl xlvii halftime show , held at the mercedes - benz superdome in new orleans . the performance stands as the second most tweeted about moment in history at 268,000 tweets per minute . at the 55th annual grammy awards , beyoncé won for best traditional r&b performance for " love on top " . her feature - length documentary film , life is but a dream , first aired on hbo on february 16 , 2013 . the film , which she directed and produced herself , featured footage from her childhood , her as a mother and businesswoman , recording , rehearsing for live performances , and her return to the spotlight following blue ivy 's birth . its dvd release in november 2013 was accompanied by footage from the revel presents : beyoncé live concerts and a new song , " god made you beautiful " . in february 2013 , beyoncé signed a global publishing agreement with warner / chappell music , which would cover her future songwriting and then - upcoming studio album .
+question:  destiny 's child released a compilation album about which topic ?
+predicted:  what was the name of the album album love ?
+
+context:  beyoncé giselle knowles - carter ( /biːˈjɒnseɪ/ bee - yon - say ) ( born september 4 , 1981 ) is an american singer , songwriter , record producer and actress . born and raised in houston , texas , she performed in various singing and dancing competitions as a child , and rose to fame in the late 1990s as lead singer of r&b girl - group destiny 's child . managed by her father , mathew knowles , the group became one of the world 's best - selling girl groups of all time . their hiatus saw the release of beyoncé 's debut album , dangerously in love ( 2003 ) , which established her as a solo artist worldwide , earned five grammy awards and featured the billboard hot 100 number - one singles " crazy in love " and " baby boy " .
+question:  what was beyoncé 's role in destiny 's child ?
+predicted:  when did beyonce become a child ?
+
+context:  in july 2002 , beyoncé continued her acting career playing foxxy cleopatra alongside mike myers in the comedy film , austin powers in goldmember , which spent its first weekend atop the us box office and grossed $ 73 million . beyoncé released " work it out " as the lead single from its soundtrack album which entered the top ten in the uk , norway , and belgium . in 2003 , beyoncé starred opposite cuba gooding , jr. , in the musical comedy the fighting temptations as lilly , a single mother whom gooding 's character falls in love with . the film received mixed reviews from critics but grossed $ 30 million in the u.s. beyoncé released " fighting temptation " as the lead single from the film 's soundtrack album , with missy elliott , mc lyte , and free which was also used to promote the film . another of beyoncé 's contributions to the soundtrack , " summertime " , fared better on the us charts .
+question:  which three countries did beyonce 's song " work it out " achieve top ten status ?
+predicted:  what song did cuba star with in mike myers , jr. jr. jr. jr.
+
+context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous fifth studio album on the itunes store without any prior announcement or promotion . the album debuted atop the billboard 200 chart , giving beyoncé her fifth consecutive number - one album in the us . this made her the first woman in the chart 's history to have her first five studio albums debut at number one . beyoncé received critical acclaim and commercial success , selling one million digital copies worldwide in six days ; the new york times noted the album 's unconventional , unexpected release as significant . musically an electro - r&b album , it concerns darker themes previously unexplored in her work , such as " bulimia , postnatal depression [ and ] the fears and insecurities of marriage and motherhood " . the single " drunk in love " , featuring jay z , peaked at number two on the billboard hot 100 chart . in april 2014 , after much speculation in the weeks before , beyoncé and jay z officially announced their on the run tour . it served as the couple 's first co - headlining stadium tour together . on august 24 , 2014 , she received the video vanguard award at the 2014 mtv video music awards . knowles also took home three competitive awards : best video with a social message and best cinematography for " pretty hurts " , as well as best collaboration for " drunk in love " . in november , forbes reported that beyoncé was the top - earning woman in music for the second year in a row — earning $ 115 million in the year , more than double her earnings in 2013 . beyoncé was reissued with new material in three forms : as an extended play , a box set , as well as a full platinum edition .
+question:  what song on beyoncé 's fifth studio album featured her husband ?
+predicted:  where did beyonce tell her 5th album ?
+
+context:  in january 2013 , destiny 's child released love songs , a compilation album of the romance - themed songs from their previous albums and a newly recorded track , " nuclear " . beyoncé performed the american national anthem singing along with a pre - recorded track at president obama 's second inauguration in washington , d.c. the following month , beyoncé performed at the super bowl xlvii halftime show , held at the mercedes - benz superdome in new orleans . the performance stands as the second most tweeted about moment in history at 268,000 tweets per minute . at the 55th annual grammy awards , beyoncé won for best traditional r&b performance for " love on top " . her feature - length documentary film , life is but a dream , first aired on hbo on february 16 , 2013 . the film , which she directed and produced herself , featured footage from her childhood , her as a mother and businesswoman , recording , rehearsing for live performances , and her return to the spotlight following blue ivy 's birth . its dvd release in november 2013 was accompanied by footage from the revel presents : beyoncé live concerts and a new song , " god made you beautiful " . in february 2013 , beyoncé signed a global publishing agreement with warner / chappell music , which would cover her future songwriting and then - upcoming studio album .
+question:  what was the title of the added track in love songs ?
+predicted:  what was the name of the 's track love ?
+
+context:  beyoncé announced a hiatus from her music career in january 2010 , heeding her mother 's advice , " to live life , to be inspired by things again " . during the break she and her father parted ways as business partners . beyoncé 's musical break lasted nine months and saw her visit multiple european cities , the great wall of china , the egyptian pyramids , australia , english music festivals and various museums and ballet performances .
+question:  how long did the hiatus last ?
+predicted:  who did beyoncé hiatus last hiatus ?
+
+context:  following the disbandment of destiny 's child in june 2005 , she released her second solo album , b'day ( 2006 ) , which contained hits " déjà vu " , " irreplaceable " , and " beautiful liar " . beyoncé also ventured into acting , with a golden globe - nominated performance in dreamgirls ( 2006 ) , and starring roles in the pink panther ( 2006 ) and obsessed ( 2009 ) . her marriage to rapper jay z and portrayal of etta james in cadillac records ( 2008 ) influenced her third album , i am ... sasha fierce ( 2008 ) , which saw the birth of her alter - ego sasha fierce and earned a record - setting six grammy awards in 2010 , including song of the year for " single ladies ( put a ring on it ) " . beyoncé took a hiatus from music in 2010 and took over management of her career ; her fourth album 4 ( 2011 ) was subsequently mellower in tone , exploring 1970s funk , 1980s pop , and 1990s soul . her critically acclaimed fifth studio album , beyoncé ( 2013 ) , was distinguished from previous releases by its experimental production and exploration of darker themes .
+question:  which album was darker in tone from her previous work ?
+predicted:  what did beyonce 's her hiatus album ?
+
+context:  beyoncé announced a hiatus from her music career in january 2010 , heeding her mother 's advice , " to live life , to be inspired by things again " . during the break she and her father parted ways as business partners . beyoncé 's musical break lasted nine months and saw her visit multiple european cities , the great wall of china , the egyptian pyramids , australia , english music festivals and various museums and ballet performances .
+question:  how long did her hiatus last ?
+predicted:  who did beyoncé hiatus last hiatus ?
+
+context:  beyoncé 's first solo recording was a feature on jay z 's " ' 03 bonnie & clyde " that was released in october 2002 , peaking at number four on the u.s. billboard hot 100 chart . her first solo album dangerously in love was released on june 24 , 2003 , after michelle williams and kelly rowland had released their solo efforts . the album sold 317,000 copies in its first week , debuted atop the billboard 200 , and has since sold 11 million copies worldwide . the album 's lead single , " crazy in love " , featuring jay z , became beyoncé 's first number - one single as a solo artist in the us . the single " baby boy " also reached number one , and singles , " me , myself and i " and " naughty girl " , both reached the top - five . the album earned beyoncé a then record - tying five awards at the 46th annual grammy awards ; best contemporary r&b album , best female r&b vocal performance for " dangerously in love 2 " , best r&b song and best rap / sung collaboration for " crazy in love " , and best r&b performance by a duo or group with vocals for " the closer i get to you " with luther vandross .
+question:  what solo album did beyonce release in 2003 ?
+predicted:  beyonce 's first solo album herself win in what year ?
+
+context:  beyoncé 's second solo album b'day was released on september 5 , 2006 , in the us , to coincide with her twenty - fifth birthday . it sold 541,000 copies in its first week and debuted atop the billboard 200 , becoming beyoncé 's second consecutive number - one album in the united states . the album 's lead single " déjà vu " , featuring jay z , reached the top five on the billboard hot 100 chart . the second international single " irreplaceable " was a commercial success worldwide , reaching number one in australia , hungary , ireland , new zealand and the united states . b'day also produced three other singles ; " ring the alarm " , " get me bodied " , and " green light " ( released in the united kingdom only ) .
+question:  what is the name of beyoncé 's second album ?
+predicted:  how collaborated with beyonce on the single ,
+
+context:  a self - described " modern - day feminist " , beyoncé creates songs that are often characterized by themes of love , relationships , and monogamy , as well as female sexuality and empowerment . on stage , her dynamic , highly choreographed performances have led to critics hailing her as one of the best entertainers in contemporary popular music . throughout a career spanning 19 years , she has sold over 118 million records as a solo artist , and a further 60 million with destiny 's child , making her one of the best - selling music artists of all time . she has won 20 grammy awards and is the most nominated woman in the award 's history . the recording industry association of america recognized her as the top certified artist in america during the 2000s decade . in 2009 , billboard named her the top radio songs artist of the decade , the top female artist of the 2000s and their artist of the millennium in 2011 . time listed her among the 100 most influential people in the world in 2013 and 2014 . forbes magazine also listed her as the most powerful female musician of 2015 .
+question:  after leaving destiny 's child , how many records did beyoncé release under her own name ?
+predicted:  how magazine named her as the most dominant woman musician ?
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  in 2011 , beyonce performed for four nights where ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  beyoncé giselle knowles was born in houston , texas , to celestine ann " tina " knowles ( née beyincé ) , a hairdresser and salon owner , and mathew knowles , a xerox sales manager . beyoncé 's name is a tribute to her mother 's maiden name . beyoncé 's younger sister solange is also a singer and a former member of destiny 's child . mathew is african - american , while tina is of louisiana creole descent ( with african , native american , french , cajun , and distant irish and spanish ancestry ) . through her mother , beyoncé is a descendant of acadian leader joseph broussard . she was raised in a methodist household .
+question:  what race was beyonce 's father ?
+predicted:  what is the descendant of beyoncé 's sister ?
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  when was beyonce 's forth album released ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  beyoncé giselle knowles was born in houston , texas , to celestine ann " tina " knowles ( née beyincé ) , a hairdresser and salon owner , and mathew knowles , a xerox sales manager . beyoncé 's name is a tribute to her mother 's maiden name . beyoncé 's younger sister solange is also a singer and a former member of destiny 's child . mathew is african - american , while tina is of louisiana creole descent ( with african , native american , french , cajun , and distant irish and spanish ancestry ) . through her mother , beyoncé is a descendant of acadian leader joseph broussard . she was raised in a methodist household .
+question:  beyonce 's father worked as a sales manager for what company ?
+predicted:  what is the descendant of beyoncé 's sister ?
+
+context:  in july 2002 , beyoncé continued her acting career playing foxxy cleopatra alongside mike myers in the comedy film , austin powers in goldmember , which spent its first weekend atop the us box office and grossed $ 73 million . beyoncé released " work it out " as the lead single from its soundtrack album which entered the top ten in the uk , norway , and belgium . in 2003 , beyoncé starred opposite cuba gooding , jr. , in the musical comedy the fighting temptations as lilly , a single mother whom gooding 's character falls in love with . the film received mixed reviews from critics but grossed $ 30 million in the u.s. beyoncé released " fighting temptation " as the lead single from the film 's soundtrack album , with missy elliott , mc lyte , and free which was also used to promote the film . another of beyoncé 's contributions to the soundtrack , " summertime " , fared better on the us charts .
+question:  what song did beyoncé release as the lead single from the fighting tempations ?
+predicted:  what song did cuba star with in mike myers , jr. jr. jr. jr.
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  who awarded beyonce and award for writing ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  her first acting role of 2006 was in the comedy film the pink panther starring opposite steve martin , grossing $ 158.8 million at the box office worldwide . her second film dreamgirls , the film version of the 1981 broadway musical loosely based on the supremes , received acclaim from critics and grossed $ 154 million internationally . in it , she starred opposite jennifer hudson , jamie foxx , and eddie murphy playing a pop singer based on diana ross . to promote the film , beyoncé released " listen " as the lead single from the soundtrack album . in april 2007 , beyoncé embarked on the beyoncé experience , her first worldwide concert tour , visiting 97 venues and grossed over $ 24 million.[note 1 ] beyoncé conducted pre - concert food donation drives during six major stops in conjunction with her pastor at st. john 's and america 's second harvest . at the same time , b'day was re - released with five additional songs , including her duet with shakira " beautiful liar " .
+question:  what was the lead single for the dreamgirls soundtrack ?
+predicted:  what was beyonce 's duet with steve ' beautiful liar liar '
+
+context:  beyoncé embarked on the mrs. carter show world tour on april 15 in belgrade , serbia ; the tour included 132 dates that ran through to march 2014 . it became the most successful tour of her career and one of the most - successful tours of all time . in may , beyoncé 's cover of amy winehouse 's " back to black " with andré 3000 on the great gatsby soundtrack was released . she was also honorary chair of the 2013 met gala . beyoncé voiced queen tara in the 3d cgi animated film , epic , released by 20th century fox on may 24 , and recorded an original song for the film , " rise up " , co - written with sia .
+question:  how many dates did beyonce 's " the mrs. carter show " entail ?
+predicted:  beyonce voiced the honorary chair for epic epic epic ?
+
+context:  the group changed their name to destiny 's child in 1996 , based upon a passage in the book of isaiah . in 1997 , destiny 's child released their major label debut song " killing time " on the soundtrack to the 1997 film , men in black . the following year , the group released their self - titled debut album , scoring their first major hit " no , no , no " . the album established the group as a viable act in the music industry , with moderate sales and winning the group three soul train lady of soul awards for best r&b / soul album of the year , best r&b / soul or rap new artist , and best r&b / soul single for " no , no , no " . the group released their multi - platinum second album the writing 's on the wall in 1999 . the record features some of the group 's most widely known songs such as " bills , bills , bills " , the group 's first number - one single , " jumpin ' jumpin ' " and " say my name " , which became their most successful song at the time , and would remain one of their signature songs . " say my name " won the best r&b performance by a duo or group with vocals and the best r&b song at the 43rd annual grammy awards . the writing 's on the wall sold more than eight million copies worldwide . during this time , beyoncé recorded a duet with marc nelson , an original member of boyz ii men , on the song " after all is said and done " for the soundtrack to the 1999 film , the best man .
+question:  who did beyoncé sing a duet with for " the best man " film ?
+predicted:  what was destiny 's child 's album hit ?
+
+context:  her first acting role of 2006 was in the comedy film the pink panther starring opposite steve martin , grossing $ 158.8 million at the box office worldwide . her second film dreamgirls , the film version of the 1981 broadway musical loosely based on the supremes , received acclaim from critics and grossed $ 154 million internationally . in it , she starred opposite jennifer hudson , jamie foxx , and eddie murphy playing a pop singer based on diana ross . to promote the film , beyoncé released " listen " as the lead single from the soundtrack album . in april 2007 , beyoncé embarked on the beyoncé experience , her first worldwide concert tour , visiting 97 venues and grossed over $ 24 million . [ note 1 ] beyoncé conducted pre - concert food donation drives during six major stops in conjunction with her pastor at st. john 's and america 's second harvest . at the same time , b'day was re - released with five additional songs , including her duet with shakira " beautiful liar " .
+question:  how much money did beyonce 's tour make in 2007 ?
+predicted:  how much did beyonce 's tour tour in ?
+
+context:  beyoncé embarked on the mrs. carter show world tour on april 15 in belgrade , serbia ; the tour included 132 dates that ran through to march 2014 . it became the most successful tour of her career and one of the most - successful tours of all time . in may , beyoncé 's cover of amy winehouse 's " back to black " with andré 3000 on the great gatsby soundtrack was released . she was also honorary chair of the 2013 met gala . beyoncé voiced queen tara in the 3d cgi animated film , epic , released by 20th century fox on may 24 , and recorded an original song for the film , " rise up " , co - written with sia .
+question:  beyonce wrote which song for the movie " epic " ?
+predicted:  beyonce voiced the honorary chair for epic epic epic ?
+
+context:  at the 52nd annual grammy awards , beyoncé received ten nominations , including album of the year for i am ... sasha fierce , record of the year for " halo " , and song of the year for " single ladies ( put a ring on it ) " , among others . she tied with lauryn hill for most grammy nominations in a single year by a female artist . in 2010 , beyoncé was featured on lady gaga 's single " telephone " and its music video . the song topped the us pop songs chart , becoming the sixth number - one for both beyoncé and gaga , tying them with mariah carey for most number - ones since the nielsen top 40 airplay chart launched in 1992 . " telephone " received a grammy award nomination for best pop collaboration with vocals .
+question:  beyonce tied with which artist for most nominations by a female artist ?
+predicted:  beyonce tied with beyonce for which singer ?
+
+context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous fifth studio album on the itunes store without any prior announcement or promotion . the album debuted atop the billboard 200 chart , giving beyoncé her fifth consecutive number - one album in the us . this made her the first woman in the chart 's history to have her first five studio albums debut at number one . beyoncé received critical acclaim and commercial success , selling one million digital copies worldwide in six days ; the new york times noted the album 's unconventional , unexpected release as significant . musically an electro - r&b album , it concerns darker themes previously unexplored in her work , such as " bulimia , postnatal depression [ and ] the fears and insecurities of marriage and motherhood " . the single " drunk in love " , featuring jay z , peaked at number two on the billboard hot 100 chart . in april 2014 , after much speculation in the weeks before , beyoncé and jay z officially announced their on the run tour . it served as the couple 's first co - headlining stadium tour together . on august 24 , 2014 , she received the video vanguard award at the 2014 mtv video music awards . knowles also took home three competitive awards : best video with a social message and best cinematography for " pretty hurts " , as well as best collaboration for " drunk in love " . in november , forbes reported that beyoncé was the top - earning woman in music for the second year in a row — earning $ 115 million in the year , more than double her earnings in 2013 . beyoncé was reissued with new material in three forms : as an extended play , a box set , as well as a full platinum edition .
+question:  how many digital copies of her fifth album did beyoncé sell in six days ?
+predicted:  where did beyonce tell her 5th album ?
+
+context:  at the 52nd annual grammy awards , beyoncé received ten nominations , including album of the year for i am ... sasha fierce , record of the year for " halo " , and song of the year for " single ladies ( put a ring on it ) " , among others . she tied with lauryn hill for most grammy nominations in a single year by a female artist . in 2010 , beyoncé was featured on lady gaga 's single " telephone " and its music video . the song topped the us pop songs chart , becoming the sixt h number - one for both beyoncé and gaga , tying them with mariah carey for most number - ones since the nielsen top 40 airplay chart launched in 1992 . " telephone " received a grammy award nomination for best pop collaboration with vocals .
+question:  how many number one singles did beyonce now have after the song " telephone " ?
+predicted:  beyonce tied with beyonce for which singer ?
+
+context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous fifth studio album on the itunes store without any prior announcement or promotion . the album debuted atop the billboard 200 chart , giving beyoncé her fifth consecutive number - one album in the us . this made her the first woman in the chart 's history to have her first five studio albums debut at number one . beyoncé received critical acclaim and commercial success , selling one million digital copies worldwide in six days ; the new york times noted the album 's unconventional , unexpected release as significant . musically an electro - r&b album , it concerns darker themes previously unexplored in her work , such as " bulimia , postnatal depression [ and ] the fears and insecurities of marriage and motherhood " . the single " drunk in love " , featuring jay z , peaked at number two on the billboard hot 100 chart . in april 2014 , after much speculation in the weeks before , beyoncé and jay z officially announced their on the run tour . it served as the couple 's first co - headlining stadium tour together . on august 24 , 2014 , she received the video vanguard award at the 2014 mtv video music awards . knowles also took home three competitive awards : best video with a social message and best cinematography for " pretty hurts " , as well as best collaboration for " drunk in love " . in november , forbes reported that beyoncé was the top - earning woman in music for the second year in a row — earning $ 115 million in the year , more than double her earnings in 2013 . beyoncé was reissued with new material in three forms : as an extended play , a box set , as well as a full platinum edition .
+question:  when did beyonce get her fifth consecutive number one hit album ?
+predicted:  where did beyonce tell her 5th album ?
+
+context:  her first acting role of 2006 was in the comedy film the pink panther starring opposite steve martin , grossing $ 158.8 million at the box office worldwide . her second film dreamgirls , the film version of the 1981 broadway musical loosely based on the supremes , received acclaim from critics and grossed $ 154 million internationally . in it , she starred opposite jennifer hudson , jamie foxx , and eddie murphy playing a pop singer based on diana ross . to promote the film , beyoncé released " listen " as the lead single from the soundtrack album . in april 2007 , beyoncé embarked on the beyoncé experience , her first worldwide concert tour , visiting 97 venues and grossed over $ 24 million.[note 1 ] beyoncé conducted pre - concert food donation drives during six major stops in conjunction with her pastor at st. john 's and america 's second harvest . at the same time , b'day was re - released with five additional songs , including her duet with shakira " beautiful liar " .
+question:  what was the name of beyoncé 's first international tour ?
+predicted:  what was beyonce 's duet with steve ' beautiful liar liar '
+
+context:  beyoncé further expanded her acting career , starring as blues singer etta james in the 2008 musical biopic , cadillac records . her performance in the film received praise from critics , and she garnered several nominations for her portrayal of james , including a satellite award nomination for best supporting actress , and a naacp image award nomination for outstanding supporting actress . beyoncé donated her entire salary from the film to phoenix house , an organization of rehabilitation centers for heroin addicts around the country . on january 20 , 2009 , beyoncé performed james ' " at last " at the first couple 's first inaugural ball . beyoncé starred opposite ali larter and idris elba in the thriller , obsessed . she played sharon charles , a mother and wife who learns of a woman 's obsessive behavior over her husband . although the film received negative reviews from critics , the movie did well at the us box office , grossing $ 68 million—$60 million more than cadillac records — on a budget of $ 20 million . the fight scene finale between sharon and the character played by ali larter also won the 2010 mtv movie award for best fight .
+question:  beyonce gave her entire salary from cadillac records to which organization ?
+predicted:  what singer did beyoncé portray in cadillac couple ,
+
+context:  a self - described " modern - day feminist " , beyoncé creates songs that are often characterized by themes of love , relationships , and monogamy , as well as female sexuality and empowerment . on stage , her dynamic , highly choreographed performances have led to critics hailing her as one of the best entertainers in contemporary popular music . throughout a career spanning 19 years , she has sold over 118 million records as a solo artist , and a further 60 million with destiny 's child , making her one of the best - selling music artists of all time . she has won 20 grammy awards and is the most nominated woman in the award 's history . the recording industry association of america recognized her as the top certified artist in america during the 2000s decade . in 2009 , billboard named her the top radio songs artist of the decade , the top female artist of the 2000s and their artist of the millennium in 2011 . time listed her among the 100 most influential people in the world in 2013 and 2014 . forbes magazine also listed her as the most powerful female musician of 2015 .
+question:  how many records has beyonce sold in her 19 year career ?
+predicted:  how magazine named her as the most dominant woman musician ?
+
+context:  on january 7 , 2012 , beyoncé gave birth to her first child , a daughter , blue ivy carter , at lenox hill hospital in new york . five months later , she performed for four nights at revel atlantic city 's ovation hall to celebrate the resort 's opening , her first performances since giving birth to blue ivy .
+question:  beyonce 's first child is named what ?
+predicted:  how many nights did beyonce perform at atlantic resort ?
+
+context:  at the 57th annual grammy awards in february 2015 , beyoncé was nominated for six awards , ultimately winning three : best r&b performance and best r&b song for " drunk in love " , and best surround sound album for beyoncé . she was nominated for album of the year but the award was won by beck for his morning phase album . in august , the cover of the september issue of vogue magazine was unveiled online , beyoncé as the cover star , becoming the first african - american artist and third african - american woman in general to cover the september issue . she headlined the 2015 made in america festival in early september and also the global citizen festival later that month . beyoncé made an uncredited featured appearance on the track " hymn for the weekend " by british rock band coldplay , on their seventh studio album a head full of dreams ( 2015 ) , which saw release in december . on january 7 , 2016 , pepsi announced beyoncé would perform alongside coldplay at super bowl 50 in february . knowles has previously performed at four super bowl shows throughout her career , serving as the main headliner of the 47th super bowl halftime show in 2013 .
+question:  how many awards did beyonce take home with her at the 57th grammy awards ?
+predicted:  beyonce magazine beat which artist for the bowl ?
+
+context:  in january 2013 , destiny 's child released love songs , a compilation album of the romance - themed songs from their previous albums and a newly recorded track , " nuclear " . beyoncé performed the american national anthem singing along with a pre - recorded track at president obama 's second inauguration in washington , d.c. the following month , beyoncé performed at the super bowl xlvii halftime show , held at the mercedes - benz superdome in new orleans . the performance stands as the second most tweeted about moment in history at 268,000 tweets per minute . at the 55th annual grammy awards , beyoncé won for best traditional r&b performance for " love on top " . her feature - length documentary film , life is but a dream , first aired on hbo on february 16 , 2013 . the film , which she directed and produced herself , featured footage from her childhood , her as a mother and businesswoman , recording , rehearsing for live performances , and her return to the spotlight following blue ivy 's birth . its dvd release in november 2013 was accompanied by footage from the revel presents : beyoncé live concerts and a new song , " god made you beautiful " . in february 2013 , beyoncé signed a global publishing agreement with warner / chappell music , which would cover her future songwriting and then - upcoming studio album .
+question:  when did destiny 's child release its album " love songs " ?
+predicted:  what was the name of the 's track love ?
+
+context:  beyoncé announced a hiatus from her music career in january 2010 , heeding her mother 's advice , " to live life , to be inspired by things again " . during the break she and her father parted ways as business partners . beyoncé 's musical break lasted nine months and saw her visit multiple european cities , the great wall of china , the egyptian pyramids , australia , english music festivals and various museums and ballet performances .
+question:  when did she stop using her father as a manager ?
+predicted:  who did beyoncé hiatus last hiatus ?
+
+context:  in 2011 , documents obtained by wikileaks revealed that beyoncé was one of many entertainers who performed for the family of libyan ruler muammar gaddafi . rolling stone reported that the music industry was urging them to return the money they earned for the concerts ; a spokesperson for beyoncé later confirmed to the huffington post that she donated the money to the clinton bush haiti fund . later that year she became the first solo female artist to headline the main pyramid stage at the 2011 glastonbury festival in over twenty years , and was named the highest - paid performer in the world per minute .
+question:  when did this leak happen ?
+predicted:  beyonce was listed in 2011 2011 confirm her donations to the libyan performance ?
+
+context:  at age eight , beyoncé and childhood friend kelly rowland met latavia roberson while in an audition for an all - girl entertainment group . they were placed into a group with three other girls as girl 's tyme , and rapped and danced on the talent show circuit in houston . after seeing the group , r&b producer arne frager brought them to his northern california studio and placed them in star search , the largest talent show on national tv at the time . girl 's tyme failed to win , and beyoncé later said the song they performed was not good . in 1995 beyoncé 's father resigned from his job to manage the group . the move reduced beyoncé 's family 's income by half , and her parents were forced to move into separated apartments . mathew cut the original line - up to four and the group continued performing as an opening act for other established r&b girl groups . the girls auditioned before record labels and were finally signed to elektra records , moving to atlanta records briefly to work on their first recording , only to be cut by the company . this put further strain on the family , and beyoncé 's parents separated . on october 5 , 1995 , dwayne wiggins 's grass roots entertainment signed the group . in 1996 , the girls began recording their debut album under an agreement with sony music , the knowles family reunited , and shortly after , the group got a contract with columbia records .
+question:  who decided to place beyonce 's group in star search the talent show ?
+predicted:  what was the name of beyoncé 's group went in manage the girls ?
+
+context:  in january 2013 , destiny 's child released love songs , a compilation album of the romance - themed songs from their previous albums and a newly recorded track , " nuclear " . beyoncé performed the american national anthem singing along with a pre - recorded track at president obama 's second inauguration in washington , d.c. the following month , beyoncé performed at the super bowl xlvii halftime show , held at the mercedes - benz superdome in new orleans . the performance stands as the second most tweeted about moment in history at 268,000 tweets per minute . at the 55th annual grammy awards , beyoncé won for best traditional r&b performance for " love on top " . her feature - length documentary film , life is but a dream , first aired on hbo on february 16 , 2013 . the film , which she directed and produced herself , featured footage from her childhood , her as a mother and businesswoman , recording , rehearsing for live performances , and her return to the spotlight following blue ivy 's birth . its dvd release in november 2013 was accompanied by footage from the revel presents : beyoncé live concerts and a new song , " god made you beautiful " . in february 2013 , beyoncé signed a global publishing agreement with warner / chappell music , which would cover her future songwriting and then - upcoming studio album .
+question:  when did destiny 's child release love songs ?
+predicted:  what was the name of the 's track love ?
+
+context:  beyoncé embarked on the mrs. carter show world tour on april 15 in belgrade , serbia ; the tour included 132 dates that ran through to march 2014 . it became the most successful tour of her career and one of the most - successful tours of all time . in may , beyoncé 's cover of amy winehouse 's " back to black " with andré 3000 on the great gatsby soundtrack was released . she was also honorary chair of the 2013 met gala . beyoncé voiced queen tara in the 3d cgi animated film , epic , released by 20th century fox on may 24 , and recorded an original song for the film , " rise up " , co - written with sia .
+question:  which amy winehouse song did beyoncé cover and release in may 2014 ?
+predicted:  beyonce voiced the honorary chair for epic epic epic ?
+
+context:  the group changed their name to destiny 's child in 1996 , based upon a passage in the book of isaiah . in 1997 , destiny 's child released their major label debut song " killing time " on the soundtrack to the 1997 film , men in black . the following year , the group released their self - titled debut album , scoring their first major hit " no , no , no " . the album established the group as a viable act in the music industry , with moderate sales and winning the group three soul train lady of soul awards for best r&b / soul album of the year , best r&b / soul or rap new artist , and best r&b / soul single for " no , no , no " . the group released their multi - platinum second album the writing 's on the wall in 1999 . the record features some of the group 's most widely known songs such as " bills , bills , bills " , the group 's first number - one single , " jumpin ' jumpin ' " and " say my name " , which became their most successful song at the time , and would remain one of their signature songs . " say my name " won the best r&b performance by a duo or group with vocals and the best r&b song at the 43rd annual grammy awards . the writing 's on the wall sold more than eight million copies worldwide . during this time , beyoncé recorded a duet with marc nelson , an original member of boyz ii men , on the song " after all is said and done " for the soundtrack to the 1999 film , the best man .
+question:  who did beyonce record with for the movie " the best man ? "
+predicted:  what was destiny 's child 's album hit ?
+
+context:  letoya luckett and roberson became unhappy with mathew 's managing of the band and eventually were replaced by farrah franklin and michelle williams . beyoncé experienced depression following the split with luckett and roberson after being publicly blamed by the media , critics , and blogs for its cause . her long - standing boyfriend left her at this time . the depression was so severe it lasted for a couple of years , during which she occasionally kept herself in her bedroom for days and refused to eat anything . beyoncé stated that she struggled to speak about her depression because destiny 's child had just won their first grammy award and she feared no one would take her seriously . beyoncé would later speak of her mother as the person who helped her fight it . franklin was dismissed , leaving just beyoncé , rowland , and williams .
+question:  who helped beyoncé overcome her depression during the years following the destiny 's child split ?
+predicted:  what event occured in her depression ?
+
+context:  beyoncé 's first solo recording was a feature on jay z 's " ' 03 bonnie & clyde " that was released in october 2002 , peaking at number four on the u.s. billboard hot 100 chart . her first solo album dangerously in love was released on june 24 , 2003 , after michelle williams and kelly rowland had released their solo efforts . the album sold 317,000 copies in its first week , debuted atop the billboard 200 , and has since sold 11 million copies worldwide . the album 's lead single , " crazy in love " , featuring jay z , became beyoncé 's first number - one single as a solo artist in the us . the single " baby boy " also reached number one , and singles , " me , myself and i " and " naughty girl " , both reached the top - five . the album earned beyoncé a then record - tying five awards at the 46th annual grammy awards ; best contemporary r&b album , best female r&b vocal performance for " dangerously in love 2 " , best r&b song and best rap / sung collaboration for " crazy in love " , and best r&b performance by a duo or group with vocals for " the closer i get to you " with luther vandross .
+question:  when did beyoncé release her first solo album ?
+predicted:  beyonce 's first solo album herself win in what year ?
+
+context:  a self - described " modern - day feminist " , beyoncé creates songs that are often characterized by themes of love , relationships , and monogamy , as well as female sexuality and empowerment . on stage , her dynamic , highly choreographed performances have led to critics hailing her as one of the best entertainers in contemporary popular music . throughout a career spanning 19 years , she has sold over 118 million records as a solo artist , and a further 60 million with destiny 's child , making her one of the best - selling music artists of all time . she has won 20 grammy awards and is the most nominated woman in the award 's history . the recording industry association of america recognized her as the top certified artist in america during the 2000s decade . in 2009 , billboard named her the top radio songs artist of the decade , the top female artist of the 2000s and their artist of the millennium in 2011 . time listed her among the 100 most influential people in the world in 2013 and 2014 . forbes magazine also listed her as the most powerful female musician of 2015 .
+question:  in which decade did the recording industry association of america recognize beyonce as the the top certified artist ?
+predicted:  how magazine named her as the most dominant woman musician ?
+
+context:  in july 2002 , beyoncé continued her acting career playing foxxy cleopatra alongside mike myers in the comedy film , austin powers in goldmember , which spent its first weekend atop the us box office and grossed $ 73 million . beyoncé released " work it out " as the lead single from its soundtrack album which entered the top ten in the uk , norway , and belgium . in 2003 , beyoncé starred opposite cuba gooding , jr. , in the musical comedy the fighting temptations as lilly , a single mother whom gooding 's character falls in love with . the film received mixed reviews from critics but grossed $ 30 million in the u.s. beyoncé released " fighting temptation " as the lead single from the film 's soundtrack album , with missy elliott , mc lyte , and free which was also used to promote the film . another of beyoncé 's contributions to the soundtrack , " summertime " , fared better on the us charts .
+question:  who did beyonce record the lead single with in the movie " the fighting temptations " ?
+predicted:  what song did cuba star with in mike myers , jr. jr. jr. jr.
+
+context:  her fourth studio album 4 was released on june 28 , 2011 in the us . 4 sold 310,000 copies in its first week and debuted atop the billboard 200 chart , giving beyoncé her fourth consecutive number - one album in the us . the album was preceded by two of its singles " run the world ( girls ) " and " best thing i never had " , which both attained moderate success . the fourth single " love on top " was a commercial success in the us . 4 also produced four other singles ; " party " , " countdown " , " i care " and " end of time " . " eat , play , love " , a cover story written by beyoncé for essence that detailed her 2010 career break , won her a writing award from the new york association of black journalists . in late 2011 , she took the stage at new york 's roseland ballroom for four nights of special performances : the 4 intimate nights with beyoncé concerts saw the performance of her 4 album to a standing room only .
+question:  beyonce won an award for which activity in 2011 ?
+predicted:  when did beyonce perform for the roseland ballroom ?
+
+context:  beyoncé embarked on the mrs. carter show world tour on april 15 in belgrade , serbia ; the tour included 132 dates that ran through to march 2014 . it became the most successful tour of her career and one of the most - successful tours of all time . in may , beyoncé 's cover of amy winehouse 's " back to black " with andré 3000 on the great gatsby soundtrack was released . she was also honorary chair of the 2013 met gala . beyoncé voiced queen tara in the 3d cgi animated film , epic , released by 20th century fox on may 24 , and recorded an original song for the film , " rise up " , co - written with sia .
+question:  what song did beyonce record for the film epic ?
+predicted:  beyonce voiced the honorary chair for epic epic epic ?
+
+context:  at the 52nd annual grammy awards , beyoncé received ten nominations , including album of the year for i am ... sasha fierce , record of the year for " halo " , and song of the year for " single ladies ( put a ring on it ) " , among others . she tied with lauryn hill for most grammy nominations in a single year by a female artist . in 2010 , beyoncé was featured on lady gaga 's single " telephone " and its music video . the song topped the us pop songs chart , becoming the sixth number - one for both beyoncé and gaga , tying them with mariah carey for most number - ones since the nielsen top 40 airplay chart launched in 1992 . " telephone " received a grammy award nomination for best pop collaboration with vocals .
+question:  beyonce received how many nominations at the 52nd annual grammy awards ?
+predicted:  beyonce tied with beyonce for which singer ?
+
+context:  her first acting role of 2006 was in the comedy film the pink panther starring opposite steve martin , grossing $ 158.8 million at the box office worldwide . her second film dreamgirls , the film version of the 1981 broadway musical loosely based on the supremes , received acclaim from critics and grossed $ 154 million internationally . in it , she starred opposite jennifer hudson , jamie foxx , and eddie murphy playing a pop singer based on diana ross . to promote the film , beyoncé released " listen " as the lead single from the soundtrack album . in april 2007 , beyoncé embarked on the beyoncé experience , her first worldwide concert tour , visiting 97 venues and grossed over $ 24 million.[note 1 ] beyoncé conducted pre - concert food donation drives during six major stops in conjunction with her pastor at st. john 's and america 's second harvest . at the same time , b'day was re - released with five additional songs , including her duet with shakira " beautiful liar " .
+question:  what pop singer did a duet with beyoncé on beautiful liar ?
+predicted:  what was beyonce 's duet with steve ' beautiful liar liar '
+
+context:  on april 4 , 2008 , beyoncé married jay z. she publicly revealed their marriage in a video montage at the listening party for her third studio album , i am ... sasha fierce , in manhattan 's sony club on october 22 , 2008 . i am ... sasha fierce was released on november 18 , 2008 in the united states . the album formally introduces beyoncé 's alter ego sasha fierce , conceived during the making of her 2003 single " crazy in love " , selling 482,000 copies in its first week , debuting atop the billboard 200 , and giving beyoncé her third consecutive number - one album in the us . the album featured the number - one song " single ladies ( put a ring on it ) " and the top - five songs " if i were a boy " and " halo " . achieving the accomplishment of becoming her longest - running hot 100 single in her career , " halo " 's success in the us helped beyoncé attain more top - ten singles on the list than any other woman during the 2000s . it also included the successful " sweet dreams " , and singles " diva " , " ego " , " broken - hearted girl " and " video phone " . the music video for " single ladies " has been parodied and imitated around the world , spawning the " first major dance craze " of the internet age according to the toronto star . the video has won several awards , including best video at the 2009 mtv europe music awards , the 2009 scottish mobo awards , and the 2009 bet awards . at the 2009 mtv video music awards , the video was nominated for nine awards , ultimately winning three including video of the year . its failure to win the best female video category , which went to american country pop singer taylor swift 's " you belong with me " , led to kanye west interrupting the ceremony and beyoncé improvising a re - presentation of swift 's award during her own acceptance speech . in march 2009 , beyoncé embarked on the i am ... world tour , her second headlining worldwide concert tour , consisting of 108 shows , grossing $ 119.5 million .
+question:  beyonce got married in 2008 to whom ?
+predicted:  beyonce got beyonce 's alter ego am ... sasha fierce , woman award ?
+
+context:  in 2011 , documents obtained by wikileaks revealed that beyoncé was one of many entertainers who performed for the family of libyan ruler muammar gaddafi . rolling stone reported that the music industry was urging them to return the money they earned for the concerts ; a spokesperson for beyoncé later confirmed to the huffington post that she donated the money to the clinton bush haiti fund . later that year she became the first solo female artist to headline the main pyramid stage at the 2011 glastonbury festival in over twenty years , and was named the highest - paid performer in the world per minute .
+question:  beyoncé was the first female singer to headline what at the 2011 glastonbury festival ?
+predicted:  beyonce was listed in 2011 2011 confirm her donations to the libyan performance ?
+
+context:  beyoncé 's first solo recording was a feature on jay z 's " ' 03 bonnie & clyde " that was released in october 2002 , peaking at number four on the u.s. billboard hot 100 chart . her first solo album dangerously in love was released on june 24 , 2003 , after michelle williams and kelly rowland had released their solo efforts . the album sold 317,000 copies in its first week , debuted atop the billboard 200 , and has since sold 11 million copies worldwide . the album 's lead single , " crazy in love " , featuring jay z , became beyoncé 's first number - one single as a solo artist in the us . the single " baby boy " also reached number one , and singles , " me , myself and i " and " naughty girl " , both reached the top - five . the album earned beyoncé a then record - tying five awards at the 46th annual grammy awards ; best contemporary r&b album , best female r&b vocal performance for " dangerously in love 2 " , best r&b song and best rap / sung collaboration for " crazy in love " , and best r&b performance by a duo or group with vocals for " the closer i get to you " with luther vandross .
+question:  what was the highest beyonce 's first solo recording achieved in the billboard hot 100 ?
+predicted:  beyonce 's first solo album herself win in what year ?
+
+context:  following the disbandment of destiny 's child in june 2005 , she released her second solo album , b'day ( 2006 ) , which contained hits " déjà vu " , " irreplaceable " , and " beautiful liar " . beyoncé also ventured into acting , with a golden globe - nominated performance in dreamgirls ( 2006 ) , and starring roles in the pink panther ( 2006 ) and obsessed ( 2009 ) . her marriage to rapper jay z and portrayal of etta james in cadillac records ( 2008 ) influenced her third album , i am ... sasha fierce ( 2008 ) , which saw the birth of her alter - ego sasha fierce and earned a record - setting six grammy awards in 2010 , including song of the year for " single ladies ( put a ring on it ) " . beyoncé took a hiatus from music in 2010 and took over management of her career ; her fourth album 4 ( 2011 ) was subsequently mellower in tone , exploring 1970s funk , 1980s pop , and 1990s soul . her critically acclaimed fifth studio album , beyoncé ( 2013 ) , was distinguished from previous releases by its experimental production and exploration of darker themes .
+question:  when did destiny 's child end their group act ?
+predicted:  what did beyonce 's her hiatus album ?
+
+context:  beyoncé further expanded her acting career , starring as blues singer etta james in the 2008 musical biopic , cadillac records . her performance in the film received praise from critics , and she garnered several nominations for her portrayal of james , including a satellite award nomination for best supporting actress , and a naacp image award nomination for outstanding supporting actress . beyoncé donated her entire salary from the film to phoenix house , an organization of rehabilitation centers for heroin addicts around the country . on january 20 , 2009 , beyoncé performed james ' " at last " at the first couple 's first inaugural ball . beyoncé starred opposite ali larter and idris elba in the thriller , obsessed . she played sharon charles , a mother and wife who learns of a woman 's obsessive behavior over her husband . although the film received negative reviews from critics , the movie did well at the us box office , grossing $ 68 million—$60 million more than cadillac records — on a budget of $ 20 million . the fight scene finale between sharon and the character played by ali larter also won the 2010 mtv movie award for best fight .
+question:  what genre of film was the movie , obsessed , in which beyonce starred in ?
+predicted:  what singer did beyoncé portray in cadillac couple ,
+
+context:  on april 4 , 2008 , beyoncé married jay z. she publicly revealed their marriage in a video montage at the listening party for her third studio album , i am ... sasha fierce , in manhattan 's sony club on october 22 , 2008 . i am ... sasha fierce was released on november 18 , 2008 in the united states . the album formally introduces beyoncé 's alter ego sasha fierce , conceived during the making of her 2003 single " crazy in love " , selling 482,000 copies in its first week , debuting atop the billboard 200 , and giving beyoncé her third consecutive number - one album in the us . the album featured the number - one song " single ladies ( put a ring on it ) " and the top - five songs " if i were a boy " and " halo " . achieving the accomplishment of becoming her longest - running hot 100 single in her career , " halo " 's success in the us helped beyoncé attain more top - ten singles on the list than any other woman during the 2000s . it also included the successful " sweet dreams " , and singles " diva " , " ego " , " broken - hearted girl " and " video phone " . the music video for " single ladies " has been parodied and imitated around the world , spawning the " first major dance craze " of the internet age according to the toronto star . the video has won several awards , including best video at the 2009 mtv europe music awards , the 2009 scottish mobo awards , and the 2009 bet awards . at the 2009 mtv video music awards , the video was nominated for nine awards , ultimately winning three including video of the year . its failure to win the best female video category , which went to american country pop singer taylor swift 's " you belong with me " , led to kanye west interrupting the ceremony and beyoncé improvising a re - presentation of swift 's award during her own acceptance speech . in march 2009 , beyoncé embarked on the i am ... world tour , her second headlining worldwide concert tour , consisting of 108 shows , grossing $ 119.5 million .
+question:  when did beyoncé get married ?
+predicted:  beyonce got beyonce 's alter ego am ... sasha fierce , woman award ?
+
+context:  the group changed their name to destiny 's child in 1996 , based upon a passage in the book of isaiah . in 1997 , destiny 's child released their major label debut song " killing time " on the soundtrack to the 1997 film , men in black . the following year , the group released their self - titled debut album , scoring their first major hit " no , no , no " . the album established the group as a viable act in the music industry , with moderate sales and winning the group three soul train lady of soul awards for best r&b / soul album of the year , best r&b / soul or rap new artist , and best r&b / soul single for " no , no , no " . the group released their multi - platinum second album the writing 's on the wall in 1999 . the record features some of the group 's most widely known songs such as " bills , bills , bills " , the group 's first number - one single , " jumpin ' jumpin ' " and " say my name " , which became their most successful song at the time , and would remain one of their signature songs . " say my name " won the best r&b performance by a duo or group with vocals and the best r&b song at the 43rd annual grammy awards . the writing 's on the wall sold more than eight million copies worldwide . during this time , beyoncé recorded a duet with marc nelson , an original member of boyz ii men , on the song " after all is said and done " for the soundtrack to the 1999 film , the best man .
+question:  what singer did beyonce record a song with for the movie , ' ' the best man " ?
+predicted:  what was destiny 's child 's album hit ?
+
+context:  beyoncé 's second solo album b'day was released on september 5 , 2006 , in the us , to coincide with her twenty - fifth birthday . it sold 541,000 copies in its first week and debuted atop the billboard 200 , becoming beyoncé 's second consecutive number - one album in the united states . the album 's lead single " déjà vu " , featuring jay z , reached the top five on the billboard hot 100 chart . the second international single " irreplaceable " was a commercial success worldwide , reaching number one in australia , hungary , ireland , new zealand and the united states . b'day also produced three other singles ; " ring the alarm " , " get me bodied " , and " green light " ( released in the united kingdom only ) .
+question:  what birthday did beyonce 's album b'day celebrate ?
+predicted:  how collaborated with beyonce on the single ,
+
+context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous fifth studio album on the itunes store without any prior announcement or promotion . the album debuted atop the billboard 200 chart , giving beyoncé her fifth consecutive number - one album in the us . this made her the first woman in the chart 's history to have her first five studio albums debut at number one . beyoncé received critical acclaim and commercial success , selling one million digital copies worldwide in six days ; the new york times noted the album 's unconventional , unexpected release as significant . musically an electro - r&b album , it concerns darker themes previously unexplored in her work , such as " bulimia , postnatal depression [ and ] the fears and insecurities of marriage and motherhood " . the single " drunk in love " , featuring jay z , peaked at number two on the billboard hot 100 chart . in april 2014 , after much speculation in the weeks before , beyoncé and jay z officially announced their on the run tour . it served as the couple 's first co - headlining stadium tour together . on august 24 , 2014 , she received the video vanguard award at the 2014 mtv video music awards . knowles also took home three competitive awards : best video with a social message and best cinematography for " pretty hurts " , as well as best collaboration for " drunk in love " . in november , forbes reported that beyoncé was the top - earning woman in music for the second year in a row — earning $ 115 million in the year , more than double her earnings in 2013 . beyoncé was reissued with new material in three forms : as an extended play , a box set , as well as a full platinum edition .
+question:  what was the name of the tour featuring both beyoncé and jay z ?
+predicted:  where did beyonce tell her 5th album ?
+
+context:  at age eight , beyoncé and childhood friend kelly rowland met latavia roberson while in an audition for an all - girl entertainment group . they were placed into a group with three other girls as girl 's tyme , and rapped and danced on the talent show circuit in houston . after seeing the group , r&b producer arne frager brought them to his northern california studio and placed them in star search , the largest talent show on national tv at the time . girl 's tyme failed to win , and beyoncé later said the song they performed was not good . in 1995 beyoncé 's father resigned from his job to manage the group . the move reduced beyoncé 's family 's income by half , and her parents were forced to move into separated apartments . mathew cut the original line - up to four and the group continued performing as an opening act for other established r&b girl groups . the girls auditioned before record labels and were finally signed to elektra records , moving to atlanta records briefly to work on their first recording , only to be cut by the company . this put further strain on the family , and beyoncé 's parents separated . on october 5 , 1995 , dwayne wiggins 's grass roots entertainment signed the group . in 1996 , the girls began recording their debut album under an agreement with sony music , the knowles family reunited , and shortly after , the group got a contract with columbia records .
+question:  what record company first signed beyonce 's group and later cut them ?
+predicted:  what was the name of beyoncé 's group went in manage the girls ?
+
+context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous fifth studio album on the itunes store without any prior announcement or promotion . the album debuted atop the billboard 200 chart , giving beyoncé her fifth consecutive number - one album in the us . this made her the first woman in the chart 's history to have her first five studio albums debut at number one . beyoncé received critical acclaim and commercial success , selling one million digital copies worldwide in six days ; the new york times noted the album 's unconventional , unexpected release as significant . musically an electro - r&b album , it concerns darker themes previously unexplored in her work , such as " bulimia , postnatal depression [ and ] the fears and insecurities of marriage and motherhood " . the single " drunk in love " , featuring jay z , peaked at number two on the billboard hot 100 chart . in april 2014 , after much speculation in the weeks before , beyoncé and jay z officially announced their on the run tour . it served as the couple 's first co - headlining stadium tour together . on august 24 , 2014 , she received the video vanguard award at the 2014 mtv video music awards . knowles also took home three competitive awards : best video with a social message and best cinematography for " pretty hurts " , as well as best collaboration for " drunk in love " . in november , forbes reported that beyoncé was the top - earning woman in music for the second year in a row — earning $ 115 million in the year , more than double her earnings in 2013 . beyoncé was reissued with new material in three forms : as an extended play , a box set , as well as a full platinum edition .
+question:  who reported beyonce to e the top earning woman in music ?
+predicted:  where did beyonce tell her 5th album ?
+
+context:  in july 2002 , beyoncé continued her acting career playing foxxy cleopatra alongside mike myers in the comedy film , austin powers in goldmember , which spent its first weekend atop the us box office and grossed $ 73 million . beyoncé released " work it out " as the lead single from its soundtrack album which entered the top ten in the uk , norway , and belgium . in 2003 , beyoncé starred opposite cuba gooding , jr. , in the musical comedy the fighting temptations as lilly , a single mother whom gooding 's character falls in love with . the film received mixed reviews from critics but grossed $ 30 million in the u.s. beyoncé released " fighting temptation " as the lead single from the film 's soundtrack album , with missy elliott , mc lyte , and free which was also used to promote the film . another of beyoncé 's contributions to the soundtrack , " summertime " , fared better on the us charts .
+question:  which song did beyoncé release as the lead single for austin powers in goldmember 's soundtrack ?
+predicted:  what song did cuba star with in mike myers , jr. jr. jr. jr.
+
+context:  the group changed their name to destiny 's child in 1996 , based upon a passage in the book of isaiah . in 1997 , destiny 's child released their major label debut song " killing time " on the soundtrack to the 1997 film , men in black . the following year , the group released their self - titled debut album , scoring their first major hit " no , no , no " . the album established the group as a viable act in the music industry , with moderate sales and winning the group three soul train lady of soul awards for best r&b / soul album of the year , best r&b / soul or rap new artist , and best r&b / soul single for " no , no , no " . the group released their multi - platinum second album the writing 's on the wall in 1999 . the record features some of the group 's most widely known songs such as " bills , bills , bills " , the group 's first number - one single , " jumpin ' jumpin ' " and " say my name " , which became their most successful song at the time , and would remain one of their signature songs . " say my name " won the best r&b performance by a duo or group with vocals and the best r&b song at the 43rd annual grammy awards . the writing 's on the wall sold more than eight million copies worldwide . during this time , beyoncé recorded a duet with marc nelson , an original member of boyz ii men , on the song " after all is said and done " for the soundtrack to the 1999 film , the best man .
+question:  what was destiny 's child 's first major song hit ?
+predicted:  what was destiny 's child 's album hit ?
+
+context:  a self - described " modern - day feminist " , beyoncé creates songs that are often characterized by themes of love , relationships , and monogamy , as well as female sexuality and empowerment . on stage , her dynamic , highly choreographed performances have led to critics hailing her as one of the best entertainers in contemporary popular music . throughout a career spanning 19 years , she has sold over 118 million records as a solo artist , and a further 60 million with destiny 's child , making her one of the best - selling music artists of all time . she has won 20 grammy awards and is the most nominated woman in the award 's history . the recording industry association of america recognized her as the top certified artist in america during the 2000s decade . in 2009 , billboard named her the top radio songs artist of the decade , the top female artist of the 2000s and their artist of the millennium in 2011 . time listed her among the 100 most influential people in the world in 2013 and 2014 . forbes magazine also listed her as the most powerful female musician of 2015 .
+question:  what magazine named beyoncé as the most powerful female musician for 2015 ?
+predicted:  how magazine named her as the most dominant woman musician ?
+
+context:  in 2011 , documents obtained by wikileaks revealed that beyoncé was one of many entertainers who performed for the family of libyan ruler muammar gaddafi . rolling stone reported that the music industry was urging them to return the money they earned for the concerts ; a spokesperson for beyoncé later confirmed to the huffington post that she donated the money to the clinton bush haiti fund . later that year she became the first solo female artist to headline the main pyramid stage at the 2011 glastonbury festival in over twenty years , and was named the highest - paid performer in the world per minute .
+question:  who did beyonce donate the money to earned from her shows ?
+predicted:  beyonce was listed in 2011 2011 confirm her donations to the libyan performance ?
+
+context:  following the disbandment of destiny 's child in june 2005 , she released her second solo album , b'day ( 2006 ) , which contained hits " déjà vu " , " irreplaceable " , and " beautiful liar " . beyoncé also ventured into acting , with a golden globe - nominated performance in dreamgirls ( 2006 ) , and starring roles in the pink panther ( 2006 ) and obsessed ( 2009 ) . her marriage to rapper jay z and portrayal of etta james in cadillac records ( 2008 ) influenced her third album , i am ... sasha fierce ( 2008 ) , which saw the birth of her alter - ego sasha fierce and earned a record - setting six grammy awards in 2010 , including song of the year for " single ladies ( put a ring on it ) " . beyoncé took a hiatus from music in 2010 and took over management of her career ; her fourth album 4 ( 2011 ) was subsequently mellower in tone , exploring 1970s funk , 1980s pop , and 1990s soul . her critically acclaimed fifth studio album , beyoncé ( 2013 ) , was distinguished from previous releases by its experimental production and exploration of darker themes .
+question:  after what movie portraying etta james , did beyonce create sasha fierce ?
+predicted:  what did beyonce 's her hiatus album ?
+
+context:  beyoncé giselle knowles - carter ( /biːˈjɒnseɪ/ bee - yon - say ) ( born september 4 , 1981 ) is an american singer , songwriter , record producer and actress . born and raised in houston , texas , she performed in various singing and dancing competitions as a child , and rose to fame in the late 1990s as lead singer of r&b girl - group destiny 's child . managed by her father , mathew knowles , the group became one of the world 's best - selling girl groups of all time . their hiatus saw the release of beyoncé 's debut album , dangerously in love ( 2003 ) , which established her as a solo artist worldwide , earned five grammy awards and featured the billboard hot 100 number - one singles " crazy in love " and " baby boy " .
+question:  how many grammy awards did beyoncé win for her first solo album ?
+predicted:  when did beyonce become a child ?
+
+context:  in january 2013 , destiny 's child released love songs , a compilation album of the romance - themed songs from their previous albums and a newly recorded track , " nuclear " . beyoncé performed the american national anthem singing along with a pre - recorded track at president obama 's second inauguration in washington , d.c. the following month , beyoncé performed at the super bowl xlvii halftime show , held at the mercedes - benz superdome in new orleans . the performance stands as the second most tweeted about moment in history at 268,000 tweets per minute . at the 55th annual grammy awards , beyoncé won for best traditional r&b performance for " love on top " . her feature - length documentary film , life is but a dream , first aired on hbo on february 16 , 2013 . the film , which she directed and produced herself , featured footage from her childhood , her as a mother and businesswoman , recording , rehearsing for live performances , and her return to the spotlight following blue ivy 's birth . its dvd release in november 2013 was accompanied by footage from the revel presents : beyoncé live concerts and a new song , " god made you beautiful " . in february 2013 , beyoncé signed a global publishing agreement with warner / chappell music , which would cover her future songwriting and then - upcoming studio album .
+question:  how many tweets per minute did the half time show get ?
+predicted:  what was the name of the 's track love ?
+
+context:  at age eight , beyoncé and childhood friend kelly rowland met latavia roberson while in an audition for an all - girl entertainment group . they were placed into a group with three other girls as girl 's tyme , and rapped and danced on the talent show circuit in houston . after seeing the group , r&b producer arne frager brought them to his northern california studio and placed them in star search , the largest talent show on national tv at the time . girl 's tyme failed to win , and beyoncé later said the song they performed was not good . in 1995 beyoncé 's father resigned from his job to manage the group . the move reduced beyoncé 's family 's income by half , and her parents were forced to move into separated apartments . mathew cut the original line - up to four and the group continued performing as an opening act for other established r&b girl groups . the girls auditioned before record labels and were finally signed to elektra records , moving to atlanta records briefly to work on their first recording , only to be cut by the company . this put further strain on the family , and beyoncé 's parents separated . on october 5 , 1995 , dwayne wiggins 's grass roots entertainment signed the group . in 1996 , the girls began recording their debut album under an agreement with sony music , the knowles family reunited , and shortly after , the group got a contract with columbia records .
+question:  who was the first record label to give the girls a record deal ?
+predicted:  what was the name of beyoncé 's group went in manage the girls ?
+
+context:  in november 2003 , she embarked on the dangerously in love tour in europe and later toured alongside missy elliott and alicia keys for the verizon ladies first tour in north america . on february 1 , 2004 , beyoncé performed the american national anthem at super bowl xxxviii , at the reliant stadium in houston , texas . after the release of dangerously in love , beyoncé had planned to produce a follow - up album using several of the left - over tracks . however , this was put on hold so she could concentrate on recording destiny fulfilled , the final studio album by destiny 's child . released on november 15 , 2004 , in the us and peaking at number two on the billboard 200 , destiny fulfilled included the singles " lose my breath " and " soldier " , which reached the top five on the billboard hot 100 chart . destiny 's child embarked on a worldwide concert tour , destiny fulfilled ... and lovin' it and during the last stop of their european tour , in barcelona on june 11 , 2005 , rowland announced that destiny 's child would disband following the north american leg of the tour . the group released their first compilation album number 1 's on october 25 , 2005 , in the us and accepted a star on the hollywood walk of fame in march 2006 .
+question:  in what year did beyonce embark on her dangerously in love tour of europe ?
+predicted:  destiny 's child got child from star from her walk in what year ?
+
+context:  on january 7 , 2012 , beyoncé gave birth to her first child , a daughter , blue ivy carter , at lenox hill hospital in new york . five months later , she performed for four nights at revel atlantic city 's ovation hall to celebrate the resort 's opening , her first performances since giving birth to blue ivy .
+question:  when did beyoncé give birth to a daughter ?
+predicted:  how many nights did beyonce perform at atlantic resort ?
+
+context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous fifth studio album on the itunes store without any prior announcement or promotion . the album debuted atop the billboard 200 chart , giving beyoncé her fifth consecutive number - one album in the us . this made her the first woman in the chart 's history to have her first five studio albums debut at number one . beyoncé received critical acclaim and commercial success , selling one million digital copies worldwide in six days ; the new york times noted the album 's unconventional , unexpected release as significant . musically an electro - r&b album , it concerns darker themes previously unexplored in her work , such as " bulimia , postnatal depression [ and ] the fears and insecurities of marriage and motherhood " . the single " drunk in love " , featuring jay z , peaked at number two on the billboard hot 100 chart . in april 2014 , after much speculation in the weeks before , beyoncé and jay z officially announced their on the run tour . it served as the couple 's first co - headlining stadium tour together . on august 24 , 2014 , she received the video vanguard award at the 2014 mtv video music awards . knowles also took home three competitive awards : best video with a social message and best cinematography for " pretty hurts " , as well as best collaboration for " drunk in love " . in november , forbes reported that beyoncé was the top - earning woman in music for the second year in a row — earning $ 115 million in the year , more than double her earnings in 2013 . beyoncé was reissued with new material in three forms : as an extended play , a box set , as well as a full platinum edition .
+question:  when did beyoncé release her fifth studio album ?
+predicted:  where did beyonce tell her 5th album ?
+
+BLEU score = 0.00
+METEOR score = 17.92

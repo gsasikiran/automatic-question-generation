@@ -12,6 +12,7 @@ import argparse
 from models import Seq2seq
 import random
 import pandas as pd
+import numpy as np
 
 import nltk
 from nltk.translate.bleu_score import corpus_bleu
@@ -185,14 +186,14 @@ def calculate_bleu_and_meteor(data, model):
         # print(pred_trg)
         trgs.append(trg)
         # print(trg)
-        meteor_score_.append(single_meteor_score(pred_trg,trg))
+        meteor_score_.append(single_meteor_score(' '.join(pred_trg),' '.join(trg)))
         
     bleu_score = corpus_bleu(pred_trgs, trgs)
-    meteor_score_ = mean(meteor_score_)
+    meteor_score_ = np.mean(meteor_score_)
     
     return bleu_score,meteor_score_
 
-bleu_score, meteor_score_ = calculate_bleu(test_data, model)
+bleu_score, meteor_score_ = calculate_bleu_and_meteor(test_data, model)
 
 print('BLEU score = {:.2f}'.format(bleu_score*100))
 print('METEOR score = {:.2f}'.format(meteor_score_*100))
