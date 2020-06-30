@@ -13,8 +13,11 @@ from models import Seq2seq
 import random
 import pandas as pd
 
+import nltk
 from nltk.translate.bleu_score import corpus_bleu
 from nltk.translate.meteor_score import single_meteor_score
+## Wordnet dependencies from meteor score
+#nltk.download('wordnet')
 
 parser = argparse.ArgumentParser(description='Automatic Question Generation Evaluator')
 parser.add_argument('--train-set', default='../dataset/squad_train.csv', type=str, metavar='PATH',
