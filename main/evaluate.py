@@ -14,6 +14,7 @@ import random
 import pandas as pd
 
 from nltk.translate.bleu_score import corpus_bleu
+from nltk.translate.meteor_score import single_meteor_score
 
 parser = argparse.ArgumentParser(description='Automatic Question Generation Evaluator')
 parser.add_argument('--train-set', default='../dataset/squad_train.csv', type=str, metavar='PATH',
@@ -51,7 +52,7 @@ fields = [('context', TEXT), ('question', TEXT), ('bio', BIO), ('lex', LEX)]
 
 # Build the dataset
 train_data, valid_data, test_data = data.TabularDataset.splits(path = '',train=trainloc, validation=valloc,
-															   test=testloc, fields = fields, format='csv', skip_header=True)
+                                 test=testloc, fields = fields, format='csv', skip_header=True)
 
 # Build vocabulary
 MAX_VOCAB_SIZE = 50000
@@ -59,13 +60,13 @@ MIN_COUNT = 5
 BATCH_SIZE = args.batch_size
 
 if args.word_vector == 'glove':
-	TEXT.build_vocab(train_data, max_size=MAX_VOCAB_SIZE,
+  TEXT.build_vocab(train_data, max_size=MAX_VOCAB_SIZE,
                  min_freq=MIN_COUNT, vectors='glove.6B.300d',
                  unk_init=torch.Tensor.normal_)
 else:
-	cache_ = args.numberbatch_loc 
-	vectors = Vectors(name='numberbatch-en-19.08.txt', cache=cache_)
-	TEXT.build_vocab(train_data, max_size=MAX_VOCAB_SIZE,
+  cache_ = args.numberbatch_loc 
+  vectors = Vectors(name='numberbatch-en-19.08.txt', cache=cache_)
+  TEXT.build_vocab(train_data, max_size=MAX_VOCAB_SIZE,
                  min_freq=MIN_COUNT, vectors=vectors,
                  unk_init=torch.Tensor.normal_)
 
@@ -159,10 +160,11 @@ for j in example_idx:
   print('predicted: ', " ".join(question))
   print()
 
-def calculate_bleu(data, model):
+def calculate_bleu_and_meteor(data, model):
     
     trgs = []
     pred_trgs = []
+    meteor_score_ = []
     
     for datum in data:
         
@@ -180,9 +182,14 @@ def calculate_bleu(data, model):
         # print(pred_trg)
         trgs.append(trg)
         # print(trg)
+        meteor_score_.append(single_meteor_score(pred_trg,trg))
         
-    return corpus_bleu(pred_trgs, trgs)
+    bleu_score = corpus_bleu(pred_trgs, trgs)
+    meteor_score_ = mean(meteor_score_)
+    
+    return bleu_score,meteor_score_
 
-bleu_score = calculate_bleu(test_data, model)
+bleu_score, meteor_score_ = calculate_bleu(test_data, model)
 
 print('BLEU score = {:.2f}'.format(bleu_score*100))
+print('METEOR score = {:.2f}'.format(meteor_score_*100))
