@@ -143,8 +143,8 @@ for i in example_idx:
   ans = vars(train_data.examples[i])['bio']
   lex = vars(train_data.examples[i])['lex']
 
-  print('src: ', ' '.join(src))
-  print('trg: ', ' '.join(trg))
+  print('context: ', ' '.join(src))
+  print('question: ', ' '.join(trg))
 
   question, logits = predict_question(model, src, ans, lex)
   print('predicted: ', " ".join(question))
@@ -156,8 +156,8 @@ for j in example_idx:
   ans = vars(test_data.examples[j])['bio']
   lex = vars(test_data.examples[j])['lex']
 
-  print('src: ', ' '.join(src))
-  print('trg: ', ' '.join(trg))
+  print('context: ', ' '.join(src))
+  print('question: ', ' '.join(trg))
 
   question, logits = predict_question(model, src, ans, lex)
   print('predicted: ', " ".join(question))
