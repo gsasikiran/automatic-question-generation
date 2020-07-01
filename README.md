@@ -7,6 +7,8 @@
 ## Overview
 
   An approach to generate questions and answers from comprehensions, by implementing a similar technique of [Zhou, et al.](https://arxiv.org/pdf/1704.01792.pdf) trained on [Pytorch](https://pytorch.org/).
+  
+  Project link: https://github.com/gsasikiran/automatic-question-generation
  
  ## Dataset: 
   - Stanford Question Answering Dataset ([SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/))
