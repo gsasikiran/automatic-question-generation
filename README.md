@@ -76,7 +76,8 @@
   - **Fleiss' Kappa score:** 0.238 (Fair agreement between evaluators)
   
   #### Automatic Evaluation:
-  - **Meteor Score:**
+  - **Meteor Score:** 0.1819
+  - **BLEU Score:** 0.0216
   
   
  
