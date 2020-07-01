@@ -46,10 +46,9 @@ valloc = args.data_folder+'validation_set.csv'
 testloc = args.data_folder+'test_set.csv'
 
 # Create Field object
-tokenize = lambda x: x.split()
-TEXT = data.Field(tokenize=tokenize, lower=False, include_lengths = True, init_token = '<SOS>', eos_token = '<EOS>')
-LEX = data.Field(tokenize=tokenize, lower=False, init_token = '<SOS>', eos_token = '<SOS>')
-BIO = data.Field(tokenize=tokenize, lower=False, init_token = '<SOS>', eos_token = '<SOS>')
+TEXT = data.Field(tokenize='spacy', lower=False, include_lengths = True, init_token = '<SOS>', eos_token = '<EOS>')
+LEX = data.Field(tokenize='spacy', lower=False, init_token = '<SOS>', eos_token = '<SOS>')
+BIO = data.Field(tokenize='spacy', lower=False, init_token = '<SOS>', eos_token = '<SOS>')
 
 # Specify Fields in the dataset
 fields = [('context', TEXT), ('question', TEXT), ('bio', BIO), ('lex', LEX)]
