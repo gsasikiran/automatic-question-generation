@@ -435,5 +435,5 @@ context:  at the 57th annual grammy awards in february 2015 , beyoncé was nomin
 question:  which artist beat beyonce out for album of the year ?
 predicted:  beyonce was the inducted in the the 57th ?
 
-BLEU score = 0.00
+BLEU score = 2.16
 METEOR score = 18.19

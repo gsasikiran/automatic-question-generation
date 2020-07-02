@@ -701,5 +701,5 @@ context:  on december 13 , 2013 , beyoncé unexpectedly released her eponymous f
 question:  when did beyoncé release her fifth studio album ?
 predicted:  where did beyonce tell her 5th album ?
 
-BLEU score = 0.00
+BLEU score = 1.62
 METEOR score = 17.92
