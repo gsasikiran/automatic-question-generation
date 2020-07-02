@@ -26,9 +26,10 @@
     - torch : 1.5.0
     - matplotlib :3.2.1
     - pandas : 1.0.5
-    - spacy : 2.3.0
+    - spacy : 2.2.4
     - numpy : 1.18.5
-    - textblob : 0.15.3
+    - torchtext : 0.3.1
+    - nltk : 3.5
  
  For more information of code and training check [main/README.md](https://github.com/gsasikiran/automatic-question-generation/tree/master/main)
  
@@ -81,12 +82,13 @@
   
   
  
- ## Reference:
+ ## References:
  [1] Zhou, Qingyu, et al. "Neural question generation from text: A preliminary study." National CCF Conference on Natural Language Processing and Chinese Computing. Springer, Cham, 2017.
  
  [2] Fleiss, Joseph L. "Measuring nominal scale agreement among many raters." Psychological bulletin 76.5 (1971): 378.
  
- 
+ [3] https://github.com/bentrevett/pytorch-seq2seq
+
  
  
   
