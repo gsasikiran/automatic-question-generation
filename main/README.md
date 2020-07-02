@@ -43,3 +43,8 @@ More flags in this file:
 - `--word-vector` word embeddings to choose; currently support [GloVe](https://nlp.stanford.edu/projects/glove/) and [ConceptNet-Numberbatch](https://github.com/commonsense/conceptnet-numberbatch)
 - `--numberbatch-loc` location of downloaded numberbatch word embeddings
 - `--batch-size` size of batch for training
+
+## Models
+link : https://drive.google.com/drive/folders/17SkI0UHG5BPsZi_bjyBfrLaZuzUdxdv5?usp=sharing
+
+Github: https://github.com/gsasikiran/automatic-question-generation

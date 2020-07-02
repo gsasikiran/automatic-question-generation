@@ -186,11 +186,13 @@ def calculate_bleu_and_meteor(data, model):
         trgs.append(trg)
         # print(trg)
         meteor_score_.append(single_meteor_score(' '.join(pred_trg),' '.join(trg)))
-        
-    bleu_score = corpus_bleu(pred_trgs, trgs)
+      
+    smooth_func = nltk.translate.bleu_score.SmoothingFunction().method4  
+    bleu_score = corpus_bleu(pred_trgs, trgs, smoothing_function=smooth_func)
     meteor_score_ = np.mean(meteor_score_)
     
     return bleu_score,meteor_score_
+
 
 bleu_score, meteor_score_ = calculate_bleu_and_meteor(test_data, model)
 
